@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<!DOCTYPE stylesheet [
+  <!ENTITY % w3centities-f PUBLIC "-//W3C//ENTITIES Combined Set//EN//XML"
+      "http://www.w3.org/2003/entities/2007/w3centities-f.ent">
+  %w3centities-f;
+]>
 
 <!--
 A FAIRE : 
-	- Étape 3 : Construire la liste des intervenants qui n'enseignent qu'à Luminy (une seule expression XPATH).
+	- Étape 3 : Construire la liste des intervenants qui n'enseignent qu'à Luminy 
+	(une seule expression XPATH).
 	- Pour améliorer l'efficacité de vos transformations XSL, 
 	utilisez la clause xsl:key afin de pouvoir retrouver facilement les UE à partir 
 	des identifiants des intervenants.
@@ -13,8 +18,7 @@ A FAIRE :
 
 -->
 
-<xsl:stylesheet version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
 	<xsl:output method="html" encoding="utf-8"/>
 
@@ -47,15 +51,18 @@ Branche principal master
 						<title>Index</title>
 					</head>
 					<body>
-						<h4><a href="index.html">Retour vers la page d'accueil</a></h4>
-						<h4><a href="intervenants.html">Liste des intervenants</a></h4>
-						<h4><a href="unites.html">Liste des unites</a></h4>
-						<h1>Les masters de Luminy</h1>
+						<h5>
+							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
+							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="unites.html">Liste des unites</a>
+						</h5>
+						
+						<h1><i>Les masters de Luminy</i></h1>
 						<xsl:call-template name="liste_des_intervenants"/>
 						<xsl:call-template name="liste_des_parcours"/>
 						<xsl:call-template name="liste_des_unites"/>
 						
-						Liste des unités à 3 crédits : 
+						<b><i>Liste des unités à 3 crédits se déroulant à Luminy : </i></b>
 						
 						<xsl:element name="ol">
 							<xsl:for-each select="//unite">
@@ -68,7 +75,7 @@ Branche principal master
 							</xsl:for-each>
 						</xsl:element>
 						
-						Liste des intervenants enseignant qu'à Luminy : 
+						<b><i>Liste des intervenants enseignant qu'à Luminy : </i></b>
 						<xsl:element name="ol">
 							<xsl:for-each select="//unite">
 								<xsl:call-template name="liste-des-intervenant-enseingant-luminy"/>
@@ -87,9 +94,11 @@ Branche principal master
 						
 					</head>
 					<body>
-						<h4><a href="index.html">Retour vers la page d'accueil</a></h4>
-						<h4><a href="intervenants.html">Liste des intervenants</a></h4>
-						<h4><a href="unites.html">Liste des unites</a></h4>
+						<h5>
+							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
+							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="unites.html">Liste des unites</a>
+						</h5>
 						<h2>Liste des intervenants : </h2>
 						<xsl:call-template name="intervenants"/>
 					</body>
@@ -103,9 +112,11 @@ Branche principal master
 						<title>Unites</title>
 					</head>
 					<body>
-						<h4><a href="index.html">Retour vers la page d'accueil</a></h4>
-						<h4><a href="intervenants.html">Liste des intervenants</a></h4>
-						<h4><a href="unites.html">Liste des unites</a></h4>
+						<h5>
+							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
+							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="unites.html">Liste des unites</a>
+						</h5>
 						<h2>Liste des unités : </h2>
 						<xsl:call-template name="details_unites"/>
 					</body>
@@ -132,9 +143,11 @@ Crée une page par unité
 						<title><xsl:value-of select="nom"/></title>
 					</head>
 					<body>
-						<h4><a href="index.html">Retour vers la page d'accueil</a></h4>
-						<h4><a href="intervenants.html">Liste des intervenants</a></h4>
-						<h4><a href="unites.html">Liste des unites</a></h4>
+						<h5>
+							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
+							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="unites.html">Liste des unites</a>
+						</h5>
 						<h2>Unite : <xsl:value-of select="nom"/></h2>
 						<xsl:call-template name="details_unite"/>
 					</body>
@@ -156,9 +169,11 @@ Crée une page par intervenant
 						<title><xsl:value-of select="nom"/></title>
 					</head>
 					<body>
-						<h4><a href="index.html">Retour vers la page d'accueil</a></h4>
-						<h4><a href="intervenants.html">Liste des intervenants</a></h4>
-						<h4><a href="unites.html">Liste des unites</a></h4>
+						<h5>
+							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
+							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="unites.html">Liste des unites</a>
+						</h5>
 						<h2>Intervenant : <xsl:value-of select="nom"/></h2>
 						<xsl:call-template name="intervenant"/>
 					</body>
@@ -180,9 +195,11 @@ Crée une page par parcours
 					<title><xsl:value-of select="nom"/></title>
 				</head>
 				<body>
-					<h4><a href="index.html">Retour vers la page d'accueil</a></h4>
-					<h4><a href="intervenants.html">Liste des intervenants</a></h4>
-					<h4><a href="unites.html">Liste des unites</a></h4>
+						<h5>
+							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
+							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="unites.html">Liste des unites</a>
+						</h5>
 					<xsl:call-template name="parcours"/>
 				</body>
 			</html>
@@ -191,48 +208,66 @@ Crée une page par parcours
 	</xsl:template>
 
 <!--
-Liste tous les parcours
--->
-	<xsl:template name="liste_des_parcours">
-		<h3>
-			Liste des parcours : 
-			<xsl:for-each select="parcours">
-				<xsl:variable name="id" select="parcours"/>
-				<ul>
-					<li><a href="parcours-{@id}.html"><xsl:value-of select="nom"/></a></li>
-				</ul>
-			</xsl:for-each>
-		</h3>
-	</xsl:template>
-
-<!--
 Liste tous les intervenants
 -->
 	<xsl:template name="liste_des_intervenants">
-		<h3>
-			Liste des intervenants : 
-			<xsl:for-each select="intervenant">
-				<xsl:variable name="id" select="intervenant"/>
-				<ul>
-					<li><a href="intervenant-{@id}.html"><xsl:value-of select="nom"/></a></li>
-				</ul>
-			</xsl:for-each>
-		</h3>
+<!--
+		<h4>
+-->
+			<b><i>Liste des intervenants : </i></b>
+			<ul> 
+				<xsl:for-each select="intervenant">
+					<xsl:variable name="id" select="intervenant"/>
+					<li><a href="intervenant-{@id}.html">
+						<xsl:value-of select="nom"/>
+					</a></li>
+				</xsl:for-each>
+			</ul>
+<!--
+		</h4>
+-->
+	</xsl:template>
+
+<!--
+Liste tous les parcours
+-->
+	<xsl:template name="liste_des_parcours">
+<!--
+		<h4>
+-->
+			<b><i>Liste des parcours : </i></b>
+			<ul>
+				<xsl:for-each select="parcours">
+					<xsl:variable name="id" select="parcours"/>
+						<li><a href="parcours-{@id}.html">
+							<xsl:value-of select="nom"/>
+						</a></li>
+				</xsl:for-each>
+			</ul>
+<!--
+		</h4>
+-->
 	</xsl:template>
 
 <!--
 Liste de tous les unités
 -->
 	<xsl:template name="liste_des_unites">
-		<h3>
-			Liste des unités : 
-			<xsl:for-each select="parcours/semestre/unite">
-				<xsl:variable name="id" select="parcours/semestre/unite"/>
-				<ul>
-					<li><a href="unites-{@id}.html"><xsl:value-of select="nom"/></a></li>
-				</ul>
-			</xsl:for-each>
-		</h3>
+<!--
+		<h4>
+-->
+			<b><i>Liste des unités : </i></b>
+			<ul>
+				<xsl:for-each select="parcours/semestre/unite">
+					<xsl:variable name="id" select="parcours/semestre/unite"/>
+						<li><a href="unites-{@id}.html">
+								<xsl:value-of select="nom"/>
+						</a></li>
+				</xsl:for-each>
+			</ul>
+<!--
+		</h4>
+-->
 	</xsl:template>
 
 <!--
@@ -388,7 +423,7 @@ Détail d'une unité
 	
 	<xsl:template name="unite_appartenant_a_un_parcours">
 	
-		Cette unité appartient au parcours : 
+		<b>Cette unité appartient au parcours : </b>
 						
 		<xsl:element name="ol">
 			<xsl:variable name="idUnite" select="@id" />
@@ -458,8 +493,7 @@ Détail d'une unité
 		</xsl:if>
 
 	</xsl:template>
-	
-	
+		
 	<xsl:template name="liste-des-intervenant-enseingant-luminy" >
 <!--
 		<xsl:param name="unite" />
