@@ -1,6 +1,7 @@
 
 clean:
-	rm www/*
+	rm -r www
+	#~ rm www/*
 	#~ rm intervenant*.html
 	#~ rm unites*.html
 	#~ rm parcours*.html
@@ -20,6 +21,7 @@ xsd:
 web:
 # Utilisez la feuille de style pour transformer votre document XML en un document XHTML. 
 # La commande xsltproc doit être utilisée pour appliquer un feuille de style XSL à un document XML.
+	mkdir -p www
 	xsltproc xsl/projet.xsl projet.xml > www/resultat.html
 
 tidy:
@@ -37,5 +39,7 @@ tidy:
 #java:
 #~ 	javac
 
-#all:
-#~ 	dtd xsd web tidy
+all:
+	make dtd 
+	make xsd
+	make web 
