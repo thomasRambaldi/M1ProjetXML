@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
+
 <!--
-Reste à faire :  
-	- Lister les données
-	- Lier les données
-	- ...
+A FAIRE : 
+	- Étape 3 : Construire la liste des intervenants qui n'enseignent qu'à Luminy (une seule expression XPATH).
+	- Pour améliorer l'efficacité de vos transformations XSL, 
+	utilisez la clause xsl:key afin de pouvoir retrouver facilement les UE à partir 
+	des identifiants des intervenants.
+	Profitez-en pour lister (avec la règle nommée précédente), les intervenants 
+	qui s'occupent de trois UE.
+
+
 -->
+
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
 	<xsl:output method="html" encoding="utf-8"/>
+
+	<xsl:key 
+		name="ue_a_partir_intervenant"
+		match="//unite"
+		use="@ref"
+	/>
 
 <!--
 Branche principal master
@@ -45,14 +59,22 @@ Branche principal master
 						
 						<xsl:element name="ol">
 							<xsl:for-each select="//unite">
-								
 									<xsl:call-template name="liste-des-UE-a-3-credits"/>
-								
-	<!--
-								<xsl:with-param name="avecPrix" select="true()" />
-	-->
+<!--
+										<xsl:with-param name="lieu" select="lieu" />
+										<xsl:with-param name="nomUe" select="nom" />
+										<xsl:with-param name="nbCredits" select="nbCredits" />
+-->
 							</xsl:for-each>
 						</xsl:element>
+						
+						Liste des intervenants enseignant qu'à Luminy : 
+						<xsl:element name="ol">
+							<xsl:for-each select="//unite">
+								<xsl:call-template name="liste-des-intervenant-enseingant-luminy"/>
+							</xsl:for-each>
+						</xsl:element>
+						
 					</body>
 				</html>
 			</xsl:document>
@@ -90,14 +112,12 @@ Branche principal master
 				</html>
 			</xsl:document>
 
-
 			<xsl:call-template name="page_par_unite"/>
 			<xsl:call-template name="page_par_intervenant"/>
 			<xsl:call-template name="page_par_parcours"/>
 
 		</html>
 	</xsl:template>
-
 
 <!--
 Crée une page par unité
@@ -299,8 +319,7 @@ Liste les parcours dont les intervenant sont responsable
 								</xsl:if>
 							
 							</xsl:for-each>
-
-						
+		
 					</xsl:for-each>
 				</xsl:element>
 	</xsl:template>
@@ -424,15 +443,43 @@ Détail d'une unité
 	</xsl:template>
 
 	<xsl:template name="liste-des-UE-a-3-credits" >
-	<!--
-		<xsl:param name="unite" />
-	-->
+<!--
+		<xsl:param name="lieu" select="Luminy"/>
+		<xsl:param name="nomUe" select="nom"/>
+		<xsl:param name="nbCredits" select="3"/>
+-->
+
 		<xsl:variable name="nbCredits" select="nbCredits" />
+		<xsl:variable name="lieu" select="lieu" />
 		<xsl:variable name="nomUE" select="nom" />
-		<xsl:if test="$nbCredits=3">
-			<li><xsl:value-of select="$nomUE" /></li>
+		
+		<xsl:if test="(($nbCredits=3) and ($lieu='Luminy'))">
+			<li><a href="unites-{@id}.html"><xsl:value-of select="$nomUE" /></a></li>
 		</xsl:if>
+
 	</xsl:template>
+	
+	
+	<xsl:template name="liste-des-intervenant-enseingant-luminy" >
+<!--
+		<xsl:param name="unite" />
+-->
+		
+		<xsl:variable name="lieu" select="lieu" />
+		<xsl:variable name="nomUE" select="nom" />
+		
+		<xsl:for-each select="./ref-intervenant">	
+			<xsl:variable name="inter" select="@ref" />
+			<xsl:if test="$lieu='Luminy'">
+					<li>
+						<xsl:value-of select="$inter" />
+					</li>
+			</xsl:if>
+		</xsl:for-each>
+
+	</xsl:template>
+
+
 
 
 </xsl:stylesheet>

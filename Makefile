@@ -25,10 +25,10 @@ web:
 tidy:
 # En fait, ce document ne respecte ni la norme XHTML, ni la norme HTML. 
 # Corrigez le avec la commande tidy (le validateur HTML/XHTML du W3C) pour obtenir un document qui respecte la norme HTML du W3C (version en français) :
-	tidy -im resultat.html
+	tidy -im www/index.html
 
 # Produisez ensuite sa version XHTML 1.0 (version en français) avec la même commande :
-	tidy -im -asxhtml -indent resultat.html
+	tidy -im -asxhtml -indent www/index.html
 
 
 #xq:
