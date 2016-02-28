@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml-stylesheet href="./res/css.css" type="text/css"?>
+<?xml-stylesheet href="./xsl/projet.xsl" type="text/xsl"?>
 <!--
 <!DOCTYPE master SYSTEM "projet.dtd"[
 	<!ENTITY  dom.luminy  "univ-mrs.fr" >

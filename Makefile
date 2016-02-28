@@ -1,6 +1,7 @@
 
 clean:
 	rm -r www
+	rm ./java/*.class
 	#~ rm www/*
 	#~ rm intervenant*.html
 	#~ rm unites*.html
@@ -35,11 +36,13 @@ tidy:
 
 #xq:
 
-
-#java:
-#~ 	javac
+java:
+	javac ./java/SampleCreateDom.java
+	java ./java/SampleCreateDom
 
 all:
 	make dtd 
 	make xsd
-	make web 
+	make web
+	#~ make xq
+	#~ make java

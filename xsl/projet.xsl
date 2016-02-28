@@ -24,8 +24,8 @@ A FAIRE :
 
 	<xsl:key 
 		name="ue_a_partir_intervenant"
-		match="//unite"
-		use="@ref"
+		match="."
+		use="@id"
 	/>
 
 <!--
@@ -51,6 +51,29 @@ Branche principal master
 						<title>Index</title>
 					</head>
 					<body>
+						
+<!--
+					a finir : test
+-->
+				 <xsl:call-template name="loop">
+				  <xsl:with-param name="i" select="0"/>
+				  <xsl:with-param name="limit" select="3"/>
+				</xsl:call-template>
+
+<!--
+						<xsl:for-each select="key('ue_a_partir_intervenant', 'morin')">
+							<xsl:value-of select="($i)+1"/>
+							<xsl:for-each select="//unite">
+								
+								<xsl:if test="">
+									
+								</xsl:if>
+							</xsl:for-each>
+							
+						</xsl:for-each>
+-->
+						
+						
 						<h5>
 							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
 							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
@@ -74,7 +97,9 @@ Branche principal master
 -->
 							</xsl:for-each>
 						</xsl:element>
-						
+<!--
+					a finir
+-->
 						<b><i>Liste des intervenants enseignant qu'à Luminy : </i></b>
 						<xsl:element name="ol">
 							<xsl:for-each select="//unite">
@@ -129,6 +154,28 @@ Branche principal master
 
 		</html>
 	</xsl:template>
+
+
+<!--
+TEST
+-->
+ <xsl:template name="loop">
+    <xsl:param name="i"/>
+    <xsl:param name="limit"/>
+    <xsl:if test="$i &lt; $limit">
+      <div>
+        <xsl:value-of select="$i"/>
+      </div>
+      <xsl:call-template name="loop">
+        <xsl:with-param name="i" select="$i+1"/>
+        <xsl:with-param name="limit" select="$limit"/>
+      </xsl:call-template>
+    </xsl:if>
+  </xsl:template>
+<!--
+FIN TEST
+-->
+
 
 <!--
 Crée une page par unité
@@ -409,7 +456,8 @@ Détail d'une unité
 				id : <xsl:value-of select="@id"/><br/>
 				unité : <xsl:value-of select="@role"/><br/>
 				<xsl:if test="ref-intervenant">
-					Enseignant(s) : <xsl:apply-templates select="ref-intervenant"/>
+					Enseignant(s) : 
+					<ul><xsl:apply-templates select="ref-intervenant"/></ul>
 				</xsl:if>
 				Credits : <xsl:apply-templates select="nbCredits"/><br/>
 				Résume : <br/><xsl:apply-templates select="resume"/><br/>
@@ -449,20 +497,16 @@ Détail d'une unité
 	</xsl:template>
 	
 	<xsl:template match="ref-intervenant">
-		<ul>
 			<li><a href="intervenant-{@ref}.html"><xsl:value-of select="@ref"/></a></li>
-		</ul>
 	</xsl:template>
 
 	<xsl:template match="unite">
-		<ul>
-			<li><a href="unites-{@id}.html"><xsl:value-of select="@id"/></a></li>
-		</ul>
+		<li><a href="unites-{@id}.html"><xsl:value-of select="@id"/></a></li>
 	</xsl:template>
 
 	<xsl:template match="semestre">
 		<h4>Semestre <xsl:value-of select="@numero"/> : </h4>
-		<xsl:apply-templates select="unite"/>
+		<ul><xsl:apply-templates select="unite"/></ul>
 	</xsl:template>
 		
 	<xsl:template name="description">
@@ -512,8 +556,6 @@ Détail d'une unité
 		</xsl:for-each>
 
 	</xsl:template>
-
-
 
 
 </xsl:stylesheet>

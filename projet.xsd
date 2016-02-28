@@ -16,30 +16,30 @@ http://www.w3schools.com/xml/schema_complex.asp
   </xs:element>
   
 <xs:complexType name="uniteInfo">
-  <xs:sequence>
+	<xs:sequence>
 	   <!-- Ajout d'info complementaire -->
 <!--
         <xs:any processContents="lax" minOccurs="0"/>
 -->
         
-        <xs:element ref="nom"/>
-        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant"/>
-        <xs:element ref="nbCredits"/>
-        <xs:element ref="resume"/>
-        <xs:element minOccurs="0" ref="plan"/>
-        <xs:element ref="lieu"/>
-      </xs:sequence>
+	<xs:element ref="nom"/>
+	<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant"/>
+	<xs:element ref="nbCredits"/>
+	<xs:element ref="resume"/>
+	<xs:element minOccurs="0" ref="plan"/>
+	<xs:element ref="lieu"/>
+  </xs:sequence>
       
-      <xs:attribute name="id" type="xs:ID"/>
-      
-      <xs:attribute name="role">
-        <xs:simpleType>
-          <xs:restriction base="xs:token">
-            <xs:enumeration value="obligatoire"/>
-            <xs:enumeration value="option"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:attribute>
+  <xs:attribute name="id" type="xs:ID"/>
+  
+  <xs:attribute name="role">
+	<xs:simpleType>
+	  <xs:restriction base="xs:token">
+		<xs:enumeration value="obligatoire"/>
+		<xs:enumeration value="option"/>
+	  </xs:restriction>
+	</xs:simpleType>
+  </xs:attribute>
 </xs:complexType>
 
 <xs:element name="unite" type="uniteInfo"/>
