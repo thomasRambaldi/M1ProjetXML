@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="./res/css.css" type="text/css"?>
+<?xml-stylesheet type="text/css" href="css.css"?>
 <?xml-stylesheet href="./xsl/projet.xsl" type="text/xsl"?>
 <!--
 <!DOCTYPE master SYSTEM "projet.dtd"[
@@ -12,14 +12,7 @@
 ]>
 -->
 
-<!DOCTYPE master [
-	<!ENTITY  dom.luminy  "univ-mrs.fr" >
-	<!ENTITY  dom.dil     "dil.&dom.luminy;" >
-	
-	<!ENTITY  lum  "Luminy">
-	<!ENTITY  stCh  "Saint-Charles">
-	<!ENTITY  stJe  "Saint-Jérome">
-]>
+
 
 <master	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		xsi:noNamespaceSchemaLocation="projet.xsd">
