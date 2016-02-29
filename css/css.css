@@ -1,0 +1,38 @@
+.index {
+	 background-color: yellow;
+}
+
+.intervenants {
+	 background-color: green;
+}
+
+.unites {
+	 background-color: red;
+}
+
+h1{
+	text-align: center;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.contour-intervenant{
+	border: 2px solid black;
+	margin: 5px;
+}
+
+.contour-unite{
+	border: 2px solid black;
+	margin: 5px;
+	padding-left : 5px;
+}
+
+.sous-titre-index{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sous-titre-intervenants{
+    font-weight: bold;
+    text-decoration: underline;
+}
