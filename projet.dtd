@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT master (parcours+, intervenant+)>
+<!ELEMENT unite    (nom, ref-intervenant*, nbCredits, resume, plan?, lieu?)>
+<!ELEMENT nom      (#PCDATA)>
+<!ELEMENT idUE  (#PCDATA)>
+<!ELEMENT nbCredits     (#PCDATA)>
+<!ELEMENT resume     (#PCDATA)>
+<!ELEMENT plan     (#PCDATA)>
+<!ELEMENT lieu     (#PCDATA)>
+<!ELEMENT mail     (#PCDATA)>
+<!ELEMENT web     (#PCDATA)>
+
+<!ELEMENT intervenant (nom, mail, web)>
+<!ELEMENT ref-intervenant (#PCDATA)>
+<!ELEMENT ref-unite (#PCDATA)>
+
+<!--
+<!ENTITY  lum  "Luminy">
+<!ENTITY  stCh  "Saint-Charles">
+<!ENTITY  stJe  "Saint-Jérome">
+-->
+
+<!ATTLIST  unite  id  ID  #IMPLIED>
+<!ATTLIST  ref-intervenant  ref  IDREF  #REQUIRED>
+<!ATTLIST  ref-unite  ref  IDREF  #REQUIRED>
+<!ATTLIST  intervenant  id  ID  #REQUIRED>
+<!ATTLIST  parcours  id  ID  #REQUIRED>
+
+
+<!ELEMENT parcours (nom, ref-intervenant*, description, semestre+, debouche+)>
+<!ELEMENT responsable (intervenant+)>
+<!ELEMENT nomRes  (#PCDATA)>
+<!ELEMENT description     (#PCDATA)>
+<!ELEMENT debouche   (#PCDATA)>
+
+<!ELEMENT semestre (unite+)>
+<!ATTLIST unite role (obligatoire|option) #IMPLIED>
+<!ATTLIST semestre numero (1|2|3|4) #IMPLIED>
+
+
+<!--
+<!ENTITY  dom.luminy  "univ-mrs.fr" >
+<!ENTITY  dom.dil     "dil.&dom.luminy;" >
+-->
+
+
+<!--
+Définissez, quand cela est possible, des entités paramètre pour 
+le contenu des éléments complexes.
+-->
+
+
+
+
+
+<!--
+<!ATTLIST  produit  id  ID  #IMPLIED>
+
+<!ATTLIST prix
+    monnaie (Euros|Francs) #IMPLIED >
+
+<!ATTLIST nature
+    natureProduit (Final|Intermediaire) #IMPLIED >
+
+<!ENTITY  nom_entité  "valeur">
+<!ENTITY  dom.luminy  "univ-mrs.fr" >
+<!ENTITY  dom.dil     "dil.&dom.luminy;" >
+<!ENTITY ex2 SYSTEM "exemple2.xml">
+
+<!ELEMENT  voisin  (#PCDATA)>
+<!ATTLIST  voisin  ref  IDREF  #REQUIRED>
+-->
+
+
+<!--
+Ajoutez à votre DTD une entité paramètre interne qui définie le contenu
+d'un produit et utilisez cette entité dans la définition de l'élément
+produit.
+-->

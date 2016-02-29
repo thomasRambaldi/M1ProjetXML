@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE master SYSTEM "projet.dtd"[
+	<!ENTITY  lum  "Luminy">
+	<!ENTITY  stCh  "Saint-Charles">
+	<!ENTITY  stJe  "Saint-Jérome">
+
+	<!ENTITY  dom.luminy  "univ-mrs.fr" >
+	<!ENTITY  dom.dil     "dil.&dom.luminy;" >
+]>
+
+<master>
+			
+	<parcours id="TC">
+		<nom>Tronc commun</nom>
+		
+			<ref-intervenant ref="morin"/>
+			<ref-intervenant ref="massat"/>
+		
+		<description>Description du master</description>
+	
+		<semestre numero="1">
+			<unite role="obligatoire" id="ENSINAU1">
+				<nom>Génie Logiciel</nom>
+				
+					<ref-intervenant ref="arrighi"/>
+					<ref-intervenant ref="perrot"/>
+				
+				<nbCredits>6</nbCredits>
+				
+				<resume>
+					Processus logiciel
+					Gestion de projet
+					Spécification et conception (artefact : notation UML)
+					Design patterns
+				</resume>
+				<plan>Cours/TD/TP : 20h/20h/20h</plan>
+				<lieu>&lum;</lieu>
+				
+			</unite>
+			
+			<unite role="obligatoire" id="ENSINAU2">
+				<nom>Complexité</nom>
+				
+					<ref-intervenant ref="perrot"/>
+					<ref-intervenant ref="creignou"/>
+				
+				<nbCredits>6</nbCredits>
+				<resume>
+					Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.
+					Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.
+					Classes P et NP. Problèmes NP-complets.
+					Méthodes de résolution des problèmes NP-Complets.
+				</resume>
+				<plan>Cours/TD/TP : 20h/20h/20h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="obligatoire" id="ENSINAU3">
+				<nom>Réseaux</nom>
+				<ref-intervenant ref="godard"/>
+				<nbCredits>6</nbCredits>
+				<resume>
+					Architecture en couches, standard OSI
+					Couche physique
+					Couche liaison de Données
+					Réseau IP
+					Algorithmes de routage, routage IP
+					Protocole TCP/IP
+					Couche Application : HTTP, SMTP, FTP, ...
+					Bases des protocoles cryptographiques (terminologie, architecture à clef publique).
+					Introduction à la Sécurité des réseaux.
+				</resume>
+				<plan>Cours/TD/TP : 20h/20h/20h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="obligatoire" id="ENSINAU4">
+				<nom>Programmation fonctionnelle</nom>
+				<ref-intervenant ref="santocanale"/>
+				<nbCredits>3</nbCredits>
+				<resume>
+					1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
+					OCaml
+					Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
+					Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
+					2- Les types
+					Sommes, types récursifs, polymorphes. Arbres. Filtrage.
+					3- Sémantique opérationnelle
+					Liaisons, environnements, clôtures. Évaluation des fonctions récursives .
+					4- Aspects impératifs
+					Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
+					5- Implantation du filtrage en OCaml
+					Termes formels, substitutions, filtrage.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="obligatoire" id="ENSINAU12">
+				<nom>BDR : approfondissement</nom>
+				
+					<ref-intervenant ref="sabatier"/>
+					<ref-intervenant ref="novelli"/>
+				
+				<nbCredits>3</nbCredits>
+				<resume>
+					nous sommes désolé, mais nous n'avons pas encore de resume.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="option" id="ENSINAU6">
+				<nom>Programmation logique</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
+					Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
+					Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
+					Règles prédéfinies.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="option" id="ENSINAU7">
+				<nom>Outils de l'internet</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Présentation d'Internet.
+					Les langages et les normes sur Internet.
+					Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
+					Les applications web.
+					Sécurité.
+					Les nouvelles et futures technologies.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="option" id="ENSINAU8">
+				<nom>Système embarqué</nom>
+				<ref-intervenant ref="niebert"/>
+				<nbCredits>3</nbCredits>
+				<resume>
+					nous sommes désolé, mais nous n'avons pas encore de resume.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="option" id="ENSINAU9">
+				<nom> Fondamentaux pour l'ingénierie des langues</nom>
+				
+					<ref-intervenant ref="bechet"/>
+					<ref-intervenant ref="ramisch"/>
+					
+				<nbCredits>3</nbCredits>
+				<resume>
+					Rappel de théorie des langages
+					Algorithmes d'analyse syntaxique pour grammaires ambiguës
+					Transducteurs finis et leur application en TAL
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="option" id="ENSINAU10">
+				<nom>Modèles à évènements discrets</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
+					Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).
+				</resume>
+				<plan>Cours/TD : 20h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="option" id="ENSINAU13">
+				<nom>Pratique de la cryptographie</nom>
+				<ref-intervenant ref="morin"/>
+				<nbCredits>3</nbCredits>
+				<resume>
+					nous sommes désolé, mais nous n'avons pas encore de resume.
+				</resume>
+				<plan>Cours/TD/TP : 20h/20h/20h</plan>
+				<lieu>&lum;</lieu>
+			</unite>  
+		</semestre>
+		
+		
+		<semestre numero="2">
+			<unite role="obligatoire" id="ENSINBU1">
+				<nom>Anglais</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			
+			<unite role="obligatoire" id="ENSINBU2">
+				<nom>Communication</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+				chapitre 1  : Théories de la communication :
+
+				1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)
+				1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)
+				chapitre 2 : Rôle de l’interculturalité dans le travail en équipe :
+
+				2.1 L’enquête interculturelle de Hofstede pour IBM
+				2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall)
+				chapitre 3 : Notions de management et de travail collaboratif
+
+				3.1 Le travail collaboratif vs le travail coopératif
+				3.2 La notion de groupes
+				3.3 Les compétences managériales
+				Pré-requis :
+
+				Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.
+				</resume>
+				<plan>Cours/TD : 15h/8h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="obligatoire" id="ENSINBU4">
+				<nom>XML</nom>
+				<ref-intervenant ref="massat"/>
+				<nbCredits>3</nbCredits>
+				<resume>
+					XML, DTD, XSD
+					XPath, XSLT, XQuery
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="obligatoire" id="ENSINBU5">
+				<nom>Algorithme et recherche opérationelle</nom>
+				<ref-intervenant ref="chepoi"/>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Programmation linéaire.
+					Notions et algorithmes de flots.
+					Applications (couplage, affectation, transport, ...)
+					Programmation dynamique (sac à dos, ordonnancement, ...)
+					Algorithmes à performance garantie
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="obligatoire" id="ENSINBU15">
+				<nom>Programmation parallèle</nom>
+				<ref-intervenant ref="morin"/>
+				<nbCredits>3</nbCredits>
+				<resume>
+					nous sommes désolé, mais nous n'avons pas encore de resume.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="option" id="ENSINBU6">
+				<nom>Projet</nom>
+				<nbCredits>6</nbCredits>
+				<resume>
+					Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="option" id="ENSINBU7">
+				<nom>Stage de deux moins</nom>
+				<nbCredits>6</nbCredits>
+				<resume>
+					Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="option" id="ENSINBU8">
+				<nom>Sémantique</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					1-Le lambda-calcul simplement typé
+
+					Syntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.
+
+					2-Extension à PCF. La règle \mu.
+
+					3-Points fixes dans les ordres partiels complets.
+
+					Le théorème de Tarski.
+
+					4-Sémantique par point fixe de PCF.
+
+					5-Cours de clôture : survol des différentes approches sémantiques.
+
+					Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de
+
+					Landin.
+
+					Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="option" id="ENSINBU9">
+				<nom>Algorithme distribuée</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="option" id="ENSINBU10">
+				<nom>Intégration des systèmes d'information</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Problématique d'intégration des SI
+					Architectures et patrons d'intégration
+					Systèmes d'Information d'entreprises
+					Systèmes d'Information sur Internet
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite> 
+			
+			<unite role="option" id="ENSINBU11">
+				<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
+				<ref-intervenant ref="novelli"/>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).
+
+					Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>  
+			
+			<unite role="option" id="ENSINBU12">
+				<nom>Intelligence artificielle</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Introduction à l'IA
+					Problèmes d'espace d'états et d'exploration
+					Logiques pour l'IA et démonstration automatique
+					Représentation de connaissances
+					Actions, temps et planification
+					Programmation par contraintes et réseaux de contraintes	
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>  
+			
+			<unite role="option" id="ENSINBU13">
+				<nom>Algorithme à performance garantie</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Algorithmes d'approximation de nature combinatoire pour les problèmes
+					NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ;
+
+					FPTAS et PTAS (ordonnancement de taches et sac à dos) ;
+					Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;
+					Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>  
+			
+			<unite role="option" id="ENSINBU16">
+				<nom>Introduction à l'apprentissage automatique</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					nous sommes désolé, mais nous n'avons pas encore de resume.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>  			
+		</semestre>
+	
+		<debouche>Débouché</debouche>
+	</parcours>	
+		
+	<parcours id="ISL">
+		<nom>Intégration de systèmes logiciels</nom>
+		
+			<ref-intervenant ref="massat"/>
+		
+		
+		<description>Description du master</description>
+		
+		<semestre numero="3">
+			<unite role="obligatoire" id="ENSINCU29">
+				<nom>Fiabilité logicielle 1</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Introduction fiabilité vs sécurité
+					Test boite blanche (graphe de contrôle, de donnée, mesure de couverture, modèle à base d'automates, qualité logicielle)
+					Test boite noire (spécifications formelle informelles, construction de suite de tests : partitionnement, tests au limites, tests combinatoires, graphe de causalité)
+					Test et Simulation (Objets factices, inversion de contrôle, intégration)
+					Validation Formelle (système de preuves : Hoare, logique de séparation, analyse statique)
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			
+			<unite role="obligatoire" id="ENSINCU30">
+				<nom>Plateforme JEE</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					L'objet du cours est de présenter le développement d'applications dans le cadre de la plateforme JEE ( Java Enterprise Edition ). Nous étudions notamment
+
+					Accès aux ressources extérieures :
+
+					les interfaces java d'accès aux bases de données relationnelles (JDBC),
+					les interfaces d'accès aux annuaires d'entreprise (LDAP, JNDI)
+					Mise en place d'une couche métier (middleware) :
+
+					les architectures logicielles à base de composants (EJB, Spring, Jboss, Glassfish) et les principes de mise en œuvre (spécification/implantation, injection de dépendances et inversion de contrôle),
+					l'architecture des applications 3-tiers,
+					Couche de présentation et interfaces Web :
+
+					les technologies de mise en œuvre des applications WEB (Servlet, JSP, Tomcat, Glassfish).
+				</resume>
+				<plan>Cours/TP : 12h/18h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			 
+			<unite role="obligatoire" id="ENSINCU37">
+				<nom>Méthodes de développement</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					En cours, sont vus les éléments suivants :
+
+					Les problématiques d'un développement pérenne (principes, cycle de développement, méthodologies)
+					Rappels d'UML : principaux diagrammes (classes, activités, cas, séquences), représentation, études de cas
+					Les design patterns en profondeur (description détaillée des 26 patterns, étude de cas)
+				</resume>
+				<lieu>&lum;</lieu>
+			</unite> 
+		
+		</semestre>
+		
+		
+		<semestre numero="4">
+			<unite role="obligatoire" id="ENSINDU3">
+				<nom>Projet industriel de mise en application</nom>
+				<nbCredits>6</nbCredits>
+				<resume>
+					Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.
+				</resume>
+				<plan>Cours/TD/TP : 10h/10h/10h</plan>
+				<lieu>&lum;</lieu>
+			</unite>
+			
+			<unite role="obligatoire" id="ENSINDU4">
+				<nom>Stage en entreprise</nom>
+				<nbCredits>3</nbCredits>
+				<resume>
+					Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.
+				</resume>
+				<lieu>&lum;</lieu>
+			</unite> 			
+		</semestre>
+		
+		<debouche>Debouche</debouche>
+	</parcours>
+
+
+	<intervenant id="morin">
+		<nom>Rémi Morin</nom>
+		<mail>morin@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~remi.morin/</web>
+	</intervenant>
+	
+	<intervenant id="bechet">
+		<nom>Frederic BECHET</nom>
+		<mail>bechet@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~fred.bechet/</web>
+	</intervenant>
+	
+	<intervenant id="ramisch">
+		<nom>Carlos Ramisch</nom>
+		<mail>ramisch@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~carlos.ramisch/</web>
+	</intervenant>
+	
+	<intervenant id="creignou">
+		<nom>Nadia CREIGNOU</nom>
+		<mail>creignou@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~nadia.creignoux/</web>
+	</intervenant>
+	
+	<intervenant id="novelli">
+		<nom>Noel NOVELLI</nom>
+		<mail>novelli@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~noel.novelli/</web>
+	</intervenant>
+	
+	<intervenant id="massat">
+		<nom>Jean Luc MASSAT</nom>
+		<mail>massat@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~jean-luc.massat/</web>
+	</intervenant>
+	
+	<intervenant id="sabatier">
+		<nom>Claude SABATIER</nom>
+		<mail>sabatier@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~claude.sabatier/</web>
+	</intervenant>
+	
+	<intervenant id="arrighi">
+		<nom>Pablo Arrighi</nom>
+		<mail>arrighi@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~pablo.arrighi/</web>
+	</intervenant>
+	
+	<intervenant id="perrot">
+		<nom> Kevin Perrot </nom>
+		<mail>perrot@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~kevin.perrot/</web>
+	</intervenant>
+	
+	<intervenant id="chepoi">
+		<nom>Victor Chepoi</nom>
+		<mail>chepoi@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~victor.chepoi/</web>
+	</intervenant>
+	
+	<intervenant id="godard">
+		<nom>Emmanuel GODARD</nom>
+		<mail>godard@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~emmanuel.godard/</web>
+	</intervenant>
+	
+	<intervenant id="niebert">
+<!--
+		<infosup>je teste cette balise</infosup>
+-->
+		<nom>Peter Niebert</nom>
+		<mail>niebert@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~peter.niebert/</web>
+<!--
+		<adresse>troplololol</adresse>
+-->
+	</intervenant>
+	
+	<intervenant id="santocanale">
+		<nom>Luigi Santocanale</nom>
+		<mail>santocanale@&dom.dil;  </mail>
+		<web>http://pageperso.lif.univ-mrs.fr/~luigi.santocanale/</web>
+	</intervenant>
+	
+</master>
