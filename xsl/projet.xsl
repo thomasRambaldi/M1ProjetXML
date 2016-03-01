@@ -47,7 +47,7 @@ Branche principal master
 					</head>
 					<body>
 						<div class="index">
-							<img src="../res/logo-sciences.png" alt="logo-sciences" />
+							<img src="../res/logo-sciences1.png" alt="logo-sciences" />
 	<!--
 						a finir : test
 	-->
@@ -178,7 +178,6 @@ TEST
 <!--
 FIN TEST
 -->
-
 
 <!--
 Crée une page par unité
