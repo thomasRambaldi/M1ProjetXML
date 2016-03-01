@@ -38,12 +38,10 @@
 				<description><xsl:value-of select="info[@nom='aspects_format_recherche']/*"/></description>
 				
 				
+<!--
 				<xsl:call-template name="semestres"/>
-<!-- 
-				inclure les unites dans le semestre
-				ici pour le moment car long a compiler sinon
 -->
-				<xsl:call-template name="unites"/>
+				<xsl:call-template name="semestre"/>
 				
 				<debouche><xsl:value-of select="info[@nom='aspects_format_recherche']/*"/></debouche>
 			
@@ -51,30 +49,81 @@
 		</xsl:for-each>
 	</xsl:template>
    
-	<xsl:template name="semestres">
-		<xsl:for-each select="//objet[@type = 'semestre']">
-			<xsl:variable name="idSemestre" select="@id"/>
-		<!-- <xsl:variable name="idSemestre" select="info[@nom='numero']/@value"/> -->
-			<semestre>
-				<xsl:attribute name="id">
-					<xsl:value-of select="$idSemestre"/>
-				</xsl:attribute>
+	<xsl:template name="semestre">
+		<xsl:for-each select="info[@nom='structure']">
+			<xsl:variable name="idSemestre" select="@value"/>
 				
-<!--
-				<xsl:for-each select="//objet[@nom = 'structure']">
+				<!-- parcours de tous les semestre-->
+				<xsl:for-each select="//objet[@type = 'semestre']">
+					<xsl:variable name="idSemes" select="@id"/>
+					<xsl:variable name="numeroSemestre" select="info[@nom='numero']/@value"/>
+		
+					<!-- Test de l'existance d'un semestre -->
+					<xsl:if test="$idSemestre=$idSemes">
+						<semestre>
+							<xsl:attribute name="id">
+								<xsl:value-of select="$numeroSemestre"/>
+							</xsl:attribute>
+							
+							<xsl:call-template name="blocUnite"/>
+							
+						</semestre>
+					</xsl:if>
 				</xsl:for-each>
--->
-<!--
-				commentaire tmp
--->
-<!--
-				<xsl:call-template name="unites"/>
--->
-			</semestre>
 		</xsl:for-each>
    
    </xsl:template>
    
+   
+   
+      
+	<xsl:template name="blocUnite">
+		<xsl:for-each select="info[@nom='structure']">
+			<xsl:variable name="idUnite" select="@value"/>
+
+			<unite>
+				<xsl:attribute name="id">
+					<xsl:value-of select="$idUnite"/>
+				</xsl:attribute>
+				
+				<xsl:for-each select="//objet[@type = 'enseignement']">
+					<xsl:variable name="idUnit" select="@id"/>
+					<xsl:if test="$idUnite=$idUnit">
+						<nom><xsl:value-of select="info[@nom='nom']/@value"/></nom>
+
+						<xsl:for-each select="info[@nom='responsables']">
+							<xsl:variable name="idIntervenant" select="@value"/>
+								
+								<ref-intervenant>
+									<xsl:attribute name="ref">
+										<xsl:for-each select="//objet[@type = 'personne']">
+											<xsl:variable name="idInter" select="@id"/>
+										
+											<xsl:if test="$idIntervenant=$idInter">
+												<xsl:value-of select="info[@nom='nom']/@value"/>
+											</xsl:if>
+											
+										</xsl:for-each>
+										
+									</xsl:attribute>
+								</ref-intervenant>
+					
+						</xsl:for-each>
+				
+						<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+						<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
+						<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
+
+					</xsl:if>
+				
+				
+				</xsl:for-each>
+
+			</unite>
+
+		</xsl:for-each>
+	</xsl:template>
+	
 	<xsl:template name="unites">
 		<xsl:for-each select="//objet[@type = 'enseignement']">
 			<xsl:variable name="idUnite" select="@id"/>
@@ -129,4 +178,5 @@
    
    
 </xsl:stylesheet>
+
 
