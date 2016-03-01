@@ -228,7 +228,10 @@
 					<xsl:value-of select="$nomIntervenant"/>
 				</xsl:attribute>
 <!-- Mettre un espace entre le prenom et le nom-->
-				<nom><xsl:value-of select="info[@nom='prenom']/@value"/><xsl:value-of select="info[@nom='nom']/@value"/></nom>
+				<nom>
+					<xsl:value-of select="info[@nom='prenom']/@value"/>
+					<xsl:text> </xsl:text>
+					<xsl:value-of select="info[@nom='nom']/@value"/></nom>
 				<mail>
 					<xsl:value-of select="info[@nom='prenom']/@value"/>.
 					<xsl:value-of select="info[@nom='nom']/@value"/>@univ-amu.fr

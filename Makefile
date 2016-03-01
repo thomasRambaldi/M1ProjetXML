@@ -26,7 +26,7 @@ web:
 # Utilisez la feuille de style pour transformer votre document XML en un document XHTML. 
 # La commande xsltproc doit être utilisée pour appliquer un feuille de style XSL à un document XML.
 	mkdir -p www
-	xsltproc xsl/projet.xsl  newProjet.xml > www/resultat.html
+	xsltproc xsl/projet.xsl  newProjet.xml > www/index.html
 
 tidy:
 # En fait, ce document ne respecte ni la norme XHTML, ni la norme HTML. 

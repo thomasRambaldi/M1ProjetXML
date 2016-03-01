@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!--
 <!DOCTYPE stylesheet [
   <!ENTITY % w3centities-f PUBLIC "-//W3C//ENTITIES Combined Set//EN//XML"
       "http://www.w3.org/2003/entities/2007/w3centities-f.ent">
   %w3centities-f;
 ]>
+-->
 
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
@@ -22,6 +24,7 @@ Branche principal master
 -->
 	<xsl:template match="master">
 		<html>
+<!--
 			<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 				
@@ -33,6 +36,7 @@ Branche principal master
 				<h3>Détails des unités : </h3>
 				<xsl:call-template name="details_unites"/>
 			</head>
+-->
 			
 			<xsl:document href="www/index.html">
 				<html>
@@ -69,8 +73,8 @@ Branche principal master
 							
 							
 							<h5>
-								<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
-								<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+								<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+								<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
 								<a href="unites.html">Liste des unites</a>
 							</h5>
 							
@@ -115,8 +119,8 @@ Branche principal master
 					<body>
 						<div class="intervenants">
 							<h5>
-								<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
-								<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+								<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+								<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
 								<a href="unites.html">Liste des unites</a>
 							</h5>
 							<h1>Liste des intervenants</h1>
@@ -136,8 +140,8 @@ Branche principal master
 					<body>
 						<div class="unites">
 							<h5>
-								<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
-								<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+								<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+								<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
 								<a href="unites.html">Liste des unites</a>
 							</h5>
 							<h1>Liste des unités</h1>
@@ -190,8 +194,8 @@ Crée une page par unité
 					</head>
 					<body>
 						<h5>
-							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
-							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+							<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
 							<a href="unites.html">Liste des unites</a>
 						</h5>
 						<h2>Unite : <xsl:value-of select="nom"/></h2>
@@ -216,8 +220,8 @@ Crée une page par intervenant
 					</head>
 					<body>
 						<h5>
-							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
-							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+							<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
 							<a href="unites.html">Liste des unites</a>
 						</h5>
 						<h2>Intervenant : <xsl:value-of select="nom"/></h2>
@@ -242,8 +246,8 @@ Crée une page par parcours
 				</head>
 				<body>
 						<h5>
-							<a href="index.html">Retour vers la page d'accueil</a> &nbsp;
-							<a href="intervenants.html">Liste des intervenants</a> &nbsp;
+							<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+							<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
 							<a href="unites.html">Liste des unites</a>
 						</h5>
 					<xsl:call-template name="parcours"/>
