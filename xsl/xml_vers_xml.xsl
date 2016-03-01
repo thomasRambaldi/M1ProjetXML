@@ -81,18 +81,28 @@
 		<xsl:for-each select="info[@nom='structure']">
 			<xsl:variable name="idUnite" select="@value"/>
 
-			<unite>
-				<xsl:attribute name="id">
-					<xsl:value-of select="$idUnite"/>
-				</xsl:attribute>
-				
-				<xsl:for-each select="//objet[@type = 'enseignement']">
-					<xsl:variable name="idUnit" select="@id"/>
-					<xsl:if test="$idUnite=$idUnit">
-						<nom><xsl:value-of select="info[@nom='nom']/@value"/></nom>
+			<!-- Bloc d'unite d'option-->
+			<xsl:for-each select="//objet[@type = 'option']">
+				<xsl:variable name="idOption" select="@id"/>
 
-						<xsl:for-each select="info[@nom='responsables']">
-							<xsl:variable name="idIntervenant" select="@value"/>
+				<xsl:if test="$idUnite=$idOption">
+					
+					<xsl:variable name="idUEOption" select="info[@nom='structure']/@value"/>
+					
+						
+					<xsl:for-each select="//objet[@type = 'enseignement']">
+						<xsl:variable name="idUEOpt" select="@id"/>
+					
+						<xsl:if test="$idUEOption=$idUEOpt">
+						<unite>
+							<xsl:attribute name="id">
+								<xsl:value-of select="$idUEOpt"/>
+							</xsl:attribute>
+							
+							<nom><xsl:value-of select="info[@nom='nom']/@value"/></nom>
+
+							<xsl:for-each select="info[@nom='responsables']">
+								<xsl:variable name="idIntervenant" select="@value"/>
 								
 								<ref-intervenant>
 									<xsl:attribute name="ref">
@@ -107,23 +117,126 @@
 										
 									</xsl:attribute>
 								</ref-intervenant>
+
+							</xsl:for-each>
+
+							<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+							<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
+							<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
+						</unite>
+						</xsl:if>
+					</xsl:for-each>
+				</xsl:if>
+			</xsl:for-each>
+
+			<!-- Bloc d'unite de groupe-->
+			<xsl:for-each select="//objet[@type = 'groupe']">
+				<xsl:variable name="idGroupe" select="@id"/>
+
+				<xsl:if test="$idUnite=$idGroupe">
 					
-						</xsl:for-each>
-				
-						<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
-						<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
-						<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
+					<xsl:variable name="idUEGroupe" select="info[@nom='structure']/@value"/>
+					
+						
+					<xsl:for-each select="//objet[@type = 'enseignement']">
+						<xsl:variable name="idUEGr" select="@id"/>
+					
+						<xsl:if test="$idUEGroupe=$idUEGr">
+						<unite>
+							<xsl:attribute name="id">
+								<xsl:value-of select="$idUEGr"/>
+							</xsl:attribute>
+							
+							<nom><xsl:value-of select="info[@nom='nom']/@value"/></nom>
 
+							<xsl:for-each select="info[@nom='responsables']">
+								<xsl:variable name="idIntervenant" select="@value"/>
+								
+								<ref-intervenant>
+									<xsl:attribute name="ref">
+										<xsl:for-each select="//objet[@type = 'personne']">
+											<xsl:variable name="idInter" select="@id"/>
+										
+											<xsl:if test="$idIntervenant=$idInter">
+												<xsl:value-of select="info[@nom='nom']/@value"/>
+											</xsl:if>
+											
+										</xsl:for-each>
+										
+									</xsl:attribute>
+								</ref-intervenant>
+
+							</xsl:for-each>
+
+							<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+							<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
+							<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
+						</unite>
+						</xsl:if>
+					</xsl:for-each>
+				</xsl:if>
+			</xsl:for-each>
+
+			<!-- Unite simple-->
+			<xsl:for-each select="//objet[@type = 'enseignement']">
+				<xsl:variable name="idUnit" select="@id"/>
+					<xsl:if test="$idUnite=$idUnit">
+						<unite>
+							
+							<xsl:attribute name="id">
+								<xsl:value-of select="$idUnite"/>
+							</xsl:attribute>
+							
+							<nom><xsl:value-of select="info[@nom='nom']/@value"/></nom>
+
+							<xsl:for-each select="info[@nom='responsables']">
+								<xsl:variable name="idIntervenant" select="@value"/>
+									
+									<ref-intervenant>
+										<xsl:attribute name="ref">
+											<xsl:for-each select="//objet[@type = 'personne']">
+												<xsl:variable name="idInter" select="@id"/>
+											
+												<xsl:if test="$idIntervenant=$idInter">
+													<xsl:value-of select="info[@nom='nom']/@value"/>
+												</xsl:if>
+												
+											</xsl:for-each>
+											
+										</xsl:attribute>
+									</ref-intervenant>
+						
+							</xsl:for-each>
+					
+							<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+							<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
+							<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
+						</unite>
 					</xsl:if>
-				
-				
 				</xsl:for-each>
-
-			</unite>
-
+				
 		</xsl:for-each>
 	</xsl:template>
 	
+	
+		<xsl:template name="intervenants">
+		<xsl:for-each select="//objet[@type = 'personne']">
+			<xsl:variable name="idIntervenant" select="@id"/>
+			<intervenant>
+				<xsl:attribute name="id">
+					<xsl:value-of select="$idIntervenant"/>
+				</xsl:attribute>
+<!-- Mettre un espace entre le prenom et le nom-->
+				<nom><xsl:value-of select="info[@nom='prenom']/@value"/><xsl:value-of select="info[@nom='nom']/@value"/></nom>
+				<mail><xsl:value-of select="info[@nom='nom']/@value"/></mail>
+<!-- Pas de lieu donc mettre dans la dtd en optionnel OU rajouter-->
+			</intervenant>
+		</xsl:for-each>
+	</xsl:template>
+	
+<!--
+	Ce template est inutile
+-->
 	<xsl:template name="unites">
 		<xsl:for-each select="//objet[@type = 'enseignement']">
 			<xsl:variable name="idUnite" select="@id"/>
@@ -160,23 +273,7 @@
 		</xsl:for-each>
 	</xsl:template>
    
-	<xsl:template name="intervenants">
-		<xsl:for-each select="//objet[@type = 'personne']">
-			<xsl:variable name="idIntervenant" select="@id"/>
-			<intervenant>
-				<xsl:attribute name="id">
-					<xsl:value-of select="$idIntervenant"/>
-				</xsl:attribute>
-<!-- Mettre un espace entre le prenom et le nom-->
-				<nom><xsl:value-of select="info[@nom='prenom']/@value"/><xsl:value-of select="info[@nom='nom']/@value"/></nom>
-				<mail><xsl:value-of select="info[@nom='nom']/@value"/></mail>
-<!-- Pas de lieu donc mettre dans la dtd en optionnel OU rajouter-->
-			</intervenant>
-		</xsl:for-each>
-	</xsl:template>
-   
-   
-   
+ 
 </xsl:stylesheet>
 
 
