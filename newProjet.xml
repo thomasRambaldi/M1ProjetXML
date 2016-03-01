@@ -10,7 +10,7 @@
       <unite id="ENSINAU1">
         <nom>Génie Logiciel</nom>
         <ref-intervenant ref="NOVELLI"/>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>- Processus logiciel</t>
@@ -28,7 +28,7 @@
         <nom>Complexité</nom>
         <ref-intervenant ref="CREIGNOU"/>
         <ref-intervenant ref="OLIVE"/>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>- Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.</t>
@@ -44,7 +44,7 @@
       </unite>
       <unite id="ENSINAU3">
         <nom>Réseaux</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>- Architecture en couches, standard OSI</t>
@@ -70,7 +70,7 @@
       </unite>
       <unite id="ENSINAU4">
         <nom>Programmation fonctionnelle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>1- Introduction à la programmation fonctionnelle, sur l'exemple du langage</t>
@@ -102,7 +102,7 @@
       </unite>
       <unite id="ENSINAU5">
         <nom>Programmation parallèle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Ma position est que dans programmation parallèle, on fait de la programmation multithread en JAVA, en tâchant d'être rigoureux : présentation des problèmes et des solutions algorithmiques ; classes utiles ; construction de classe threadsafe ; détail de modèle mémoire</t>
@@ -116,7 +116,7 @@
       </unite>
       <unite id="ENSINAU10">
         <nom>Modèles à évènements discrets</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de</t>
@@ -128,7 +128,7 @@
       </unite>
       <unite id="ENSINAU11">
         <nom>Introduction à l'apprentissage automatique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Introduction aux concepts de bases : formalisme statistique, erreur de généralisation</t>
@@ -146,7 +146,7 @@
       </unite>
       <unite id="ENSINAU6">
         <nom>Programmation logique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.</t>
@@ -162,7 +162,7 @@
       </unite>
       <unite id="ENSINAU7">
         <nom>Outils de l'internet</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Présentation d'Internet.</t>
@@ -182,13 +182,13 @@
       </unite>
       <unite id="ENSINAU8">
         <nom>Système embarqué</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : 10h/10h/10h</plan>
       </unite>
       <unite id="ENSINAU9">
         <nom>Fondamentaux pour l'ingénierie des langues</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Rappel de théorie des langages</t>
@@ -204,7 +204,7 @@
     <semestre id="2">
       <unite id="ENSINBU1">
         <nom>Anglais</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</t>
@@ -215,7 +215,7 @@
       <unite id="ENSINBU2">
         <nom>Communication</nom>
         <ref-intervenant ref="RENE CHABAROT"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <b>chapitre 1</b>
@@ -260,7 +260,7 @@
       </unite>
       <unite id="ENSINBU3">
         <nom>Bases de données avancées</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Transactions, concurrence</t>
@@ -276,7 +276,7 @@
         <nom>XML</nom>
         <ref-intervenant ref="MASSAT"/>
         <ref-intervenant ref="SELLAMI"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- XML, DTD, XSD</t>
@@ -288,7 +288,7 @@
       </unite>
       <unite id="ENSINBU5">
         <nom>Algorithmique et recherche opérationnelle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Programmation linéaire.</t>
@@ -306,7 +306,7 @@
       </unite>
       <unite id="ENSINBU6">
         <nom>Projet</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</t>
@@ -316,7 +316,7 @@
       </unite>
       <unite id="ENSINBU7">
         <nom>Stage de deux mois</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</t>
@@ -326,7 +326,7 @@
       </unite>
       <unite id="ENSINBU10">
         <nom>Intégration des systèmes d'information</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Problématique d'intégration des SI</t>
@@ -343,7 +343,7 @@
       <unite id="ENSINBU11">
         <nom>Initiation à la fouille de données et à l’optimisation des SGBD</nom>
         <ref-intervenant ref="NOVELLI"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</t>
@@ -355,7 +355,7 @@
       </unite>
       <unite id="ENSINBU12">
         <nom>Intelligence artificielle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Introduction à l'IA</t>
@@ -375,7 +375,7 @@
       </unite>
       <unite id="ENSINBU13">
         <nom>Algorithme à performance garantie</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- Algorithmes d'approximation de nature combinatoire pour les problèmes</t>
@@ -394,7 +394,7 @@
       <unite id="ENSINBU14">
         <nom>Pratique de la cryptographie</nom>
         <ref-intervenant ref="MORIN"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Cette UE propose un tour d'horizon de la cryptographie moderne avec une attention particulière pour le codage de primitives cryptographiques. Il s'agit tout d'abord de comprendre les problèmes centraux de confidentialité, d’authentification et d’intégrité. Les notions de signature et de certificats électroniques seront aussi étudiées. Les différents types de solutions seront présentées : cryptographie symétrique, asymétrique, par flot, par blocs, les fonctions de hâchage, les architectures PKI, etc.</t>
@@ -406,7 +406,7 @@
       </unite>
       <unite id="ENSINBU8">
         <nom>Sémantique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>1-Le lambda-calcul simplement typé</t>
@@ -435,7 +435,7 @@
       <unite id="ENSINBU9">
         <nom>Algorithmique distribuée</nom>
         <ref-intervenant ref="LABOUREL"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</t>
@@ -457,7 +457,7 @@
     <semestre id="3">
       <unite id="ENSINCU1">
         <nom>Algorithmique et complexité</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Principales techniques de conception et analyse d'algorithmes (efficaces) pour les problèmes polynomiaux et les problèmes NP-complets. Complexité de l'approximation, du comptage. Complexité paramétrée. Classes probabilistes.</t>
@@ -467,7 +467,7 @@
       </unite>
       <unite id="ENSINCU2">
         <nom>Logique, automates et aspects formels de la théorie des langages</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Logique du premier ordre. Logiques modales et temporelles. Logiques monadiques. Décidabilité de logiques .</t>
@@ -480,7 +480,7 @@
       </unite>
       <unite id="ENSINCU3">
         <nom>Statistique inférentielle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Théorie des probabilités et statistique inférentielle. Ce cours permet d'acquérir des bases solides pour l'apprentissage automatique ou le traitement automatique de la langue naturelle</t>
@@ -490,7 +490,7 @@
       </unite>
       <unite id="ENSINCU10">
         <nom>Fouille de données avancée</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Approfondissement des techniques de fouille de données en étudiant les méthodes de réduction des règles d'association ainsi que leur application à la classification supervisée et en mettant en œuvre des algorithmes par niveaux.</t>
@@ -500,7 +500,7 @@
       </unite>
       <unite id="ENSINCU11">
         <nom>Géométrie discrète</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Introduction à la géométrie discrète dans $Z^n$, en trois volets : des rappels sur la géométrie des nombres, un état de l'art en géométrie discrète, enfin une étude des transformations de distances et leurs applications.</t>
@@ -510,7 +510,7 @@
       </unite>
       <unite id="ENSINCU12">
         <nom>Algorithmique des graphes et réseaux</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Algorithmes exacts. Algorithmes d'approximation. Structures de données distribuées.</t>
@@ -520,7 +520,7 @@
       </unite>
       <unite id="ENSINCU13">
         <nom>Espaces métriques : structure et algorithmiques</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Introduction aux principales classes et constructions des espaces métriques et des graphes métriques,. Plongements isométriques ou à faible distorsion des espaces métriques dans des espaces géométriques, leur applications en informatique et mathématiques.</t>
@@ -530,7 +530,7 @@
       </unite>
       <unite id="ENSINCU14">
         <nom>Optimisation combinatoire et programmation en nombres entiers</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Principaux concepts, algorithmes, méthodes et outils qui permettent de résoudre les problèmes d'optimisation combinatoire, en particulier ceux qui se formulent comme des programmes linéaires en nombres entiers.</t>
@@ -540,7 +540,7 @@
       </unite>
       <unite id="ENSINCU15">
         <nom>Logiques et jeux</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Mu-calcul , syntaxe-sémantique. Model-checking par jeux de parité, tableaux-decidabilité. Puissance expressive</t>
@@ -550,7 +550,7 @@
       </unite>
       <unite id="ENSINCU16">
         <nom>Algorithmique distribuée 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Algorithmes de diffusion, diffusion avec retour. Algorithmes d'élection, détection de la terminaison. Tolérance aux pannes</t>
@@ -560,7 +560,7 @@
       </unite>
       <unite id="ENSINCU17">
         <nom>Vérification et sécurité</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Model Checking. Algorithmes de vérification. Modèles de sécurité. Vérification de programmes par analyse statique.</t>
@@ -570,7 +570,7 @@
       </unite>
       <unite id="ENSINCU18">
         <nom>Modèles du parallélisme</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Modèles classiques de systèmes. Résultats principaux du domaine concernant les problèmes d'accessibilité, de model-checking, de contrôle ou de synthèse associés.</t>
@@ -580,7 +580,7 @@
       </unite>
       <unite id="ENSINCU19">
         <nom>Modèles et connaissances linguistiques pour le TAL</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Traitement automatique des langues dans ses aspects applications. Différentes types de connaissances et modèles symboliques sur la langue. Plusieurs ressources linguistiques pour le français sont examinées.</t>
@@ -590,7 +590,7 @@
       </unite>
       <unite id="ENSINCU20">
         <nom>Syntaxe et sémantique : modèles et outils</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Principes et nature des représentations syntaxiques et sémantiques associables à une phrase. Différents formalismes seront étudiés pour exprimer ces représentations.</t>
@@ -600,7 +600,7 @@
       </unite>
       <unite id="ENSINCU21">
         <nom>Modèles numériques pour le TAL</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Présentation des modèles numériques utilisés pour différentes tâches du Traitement Automatique des Langue. Algorithmes qui permettent d'en estimer les paramètres à partir de données et les algorithmes de décodage.</t>
@@ -610,7 +610,7 @@
       </unite>
       <unite id="ENSINCU22">
         <nom>Applications du Traitement Automatique de la Langue (TAL)</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>État de l'art dans différentes applications du Traitement Automatique des Langues, tel que la traduction automatique, le résumé automatique ainsi que sur les traitements de « bas niveau » nécessaires dans la majorité des applications.</t>
@@ -620,7 +620,7 @@
       </unite>
       <unite id="ENSINCU23">
         <nom>Algorithmique des chaînes de caractères</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Différentes structures et algorithmes relatifs aux traitements des chaînes de caractères.</t>
@@ -630,7 +630,7 @@
       </unite>
       <unite id="ENSINCU24">
         <nom>Classification et phylogénie</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Méthodes de classification et de construction d'arbres à partir de distances.</t>
@@ -640,7 +640,7 @@
       </unite>
       <unite id="ENSINCU25">
         <nom>Modèles markoviens</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Présentation des chaînes de Markov, leurs algorithmes et applications.</t>
@@ -650,7 +650,7 @@
       </unite>
       <unite id="ENSINCU26">
         <nom>Logiques non-standards</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Logiques multi-modales des connaissances et de l'interaction. Logiques non-monotones. Logiques de description. Tableaux sémantiques pour logiques de mondes possibles. Bases de connaissances dynamiques.</t>
@@ -660,7 +660,7 @@
       </unite>
       <unite id="ENSINCU4">
         <nom>Nouveaux défis en apprentissage</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Étude des méthodes d'apprentissage qui traitent, de façon tant théorique qu'appliquée, séparément ou simultanément, un ou plusieurs problèmes classiques</t>
@@ -670,7 +670,7 @@
       </unite>
       <unite id="ENSINCU5">
         <nom>Théorie de l'apprentissage</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Avancées récentes en théorie de l'apprentissage statistique : complexité de Rademacher, bornes PAC-Bayes, stabilité algorithmique, schémas de compression.</t>
@@ -680,7 +680,7 @@
       </unite>
       <unite id="ENSINCU6">
         <nom>Inférence grammaticale</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Large panorama des différents algorithmes et résultats obtenus récemment pour l'apprentissage de représentations grammaticales de langages</t>
@@ -690,7 +690,7 @@
       </unite>
       <unite id="ENSINCU7">
         <nom>Apprentissage numérique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Étude de quelques unes des méthodes les plus performantes en apprentissage numérique : les réseaux de neurones, les modèles de Markov cachés et les machines à vecteurs de support.</t>
@@ -700,7 +700,7 @@
       </unite>
       <unite id="ENSINCU8">
         <nom>Fouille de bases de données</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Bases mathématiques sur lesquelles reposent les méthodes de fouille de bases de données qui sont également présentées et visent soit l'aide à la décision soit l'administration de bases de données.</t>
@@ -710,7 +710,7 @@
       </unite>
       <unite id="ENSINCU9">
         <nom>Entrepôts de données</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Étude de la problématique posée par les entrepôts de données (ou data warehouse ou OLAP), depuis leur conception jusqu'aux algorithmes de calcul de cubes de données.</t>
@@ -722,7 +722,7 @@
     <semestre id="4">
       <unite id="ENSINDU1">
         <nom>Communication scientifique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Lecture d'un article en anglais et exposé oral.</t>
@@ -732,7 +732,7 @@
       </unite>
       <unite id="ENSINDU2">
         <nom>Initiation à la recherche</nom>
-        <credits>27</credits>
+        <nbCredits>27</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
@@ -750,7 +750,7 @@
     <semestre id="3">
       <unite id="ENSISCU20">
         <nom>RTC : Concepts et fondamentaux de la modélisation</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Concepts et formalismes de base pour la modélisation temporelle et spatiale (modèles de comportements, modèles de structures et modèles géométriques) et la modélisation de l'information et de la connaissance (méthodes de représentation de la connaissance, formalismes logiques, expression de problèmes à l'aide de contraintes).</t>
@@ -760,7 +760,7 @@
       </unite>
       <unite id="ENSISCU21">
         <nom>RI1 : Fondements logiques et algorithmiques</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Introduction aux notions fondamentales logiques et algorithmiques qui trouvent leurs applications dans plusieurs domaines : systèmes multi-agents, vérification des systèmes, ontologies pour le web sémantique, traitement de connaissance incomplète et révisable, recherche d’information et fouilles des données. Le cours prévoit une partie portant sur la complexité structurelle nécessaire à l’analyse et à l’évaluation des tous formalismes logiques d’un point de vue algorithmique ainsi que sur les algorithmes probabilistes utilisés dans la recherche d’information et fouilles des données.</t>
@@ -770,7 +770,7 @@
       </unite>
       <unite id="ENSISCU22">
         <nom>RI2 : Fondements de programmation et de satisfiabilité</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Etude des problèmes de satisfaction de contraintes (CSP) et du problème de la satisfiabilité en logique propositionnelle (SAT). Nous nous intéressons en particulier aux questions portant sur la résolution de ces problèmes (méthodes et fondements théoriques) ainsi qu'aux fragments polynomiaux existant en SAT et CSP.</t>
@@ -780,7 +780,7 @@
       </unite>
       <unite id="ENSISCU23">
         <nom>RI3 : Représentation des connaissances : Approfondissement et applications</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Acquérir des notions avancées en représentation de connaissances et raisonnement dans les domaines de : la révision et la fusion des croyances, l’Answer Set Programming et les théories formelles de l’argumentation.</t>
@@ -790,61 +790,61 @@
       </unite>
       <unite id="ENSISCU24">
         <nom>RI4 : Planification, configuration et raisonnement temporel et spatial</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU25">
         <nom>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU26">
         <nom>RI6 : Approches avancées de conception de systèmes d'information</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU27">
         <nom>RI7 : Extraction et intégration d'information du web</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU28">
         <nom>RI8 : Web services</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU29">
         <nom>RIS1 : Traitement de données multimodales</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU30">
         <nom>RIS2 : Formalises à éléments discrets</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU31">
         <nom>RIS3 : Simulation distribuée et modèles hétérogènes</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU32">
         <nom>RIS4 : Aide à la décision</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU1">
         <nom>AU4 : Classification, apprentissage et décision</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Méthodes non supervisées et supervisées, classification Bayésienne, évaluation et validation, logique floue</t>
@@ -854,7 +854,7 @@
       </unite>
       <unite id="ENSISCU2">
         <nom>IM8 : Segmentation 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Contours actifs, filtrage non linéaire/diffusion, approches stochastiques (Markov/Bayes)</t>
@@ -864,55 +864,55 @@
       </unite>
       <unite id="ENSISCU3">
         <nom>IM6 : Animation et simulation physique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : 15h/h/15h</plan>
       </unite>
       <unite id="ENSISCU33">
         <nom>R2 : Communication et interaction homme-machine</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU34">
         <nom>RE1 : Problématique, démarche, modèles et objects de conception</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU35">
         <nom>RE2 : Modèles et objets de conception</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU36">
         <nom>RE3 : Systèmes intelligents</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU37">
         <nom>RE4 : Conception et architecture</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU38">
         <nom>RO1 : Une UE extérieure de 3 crédits (validation requise)</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU39">
         <nom>RO2 : Une UE extérieure de 6 crédits (validation requise)</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU4">
         <nom>IM10 : Imagerie médicale</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Origine et nature des images médicales (les différentes modalités), Analyse des images médicales, Reconstruction et imagerie médicale 3D, Recalage d’images, Applications</t>
@@ -922,49 +922,49 @@
       </unite>
       <unite id="ENSISCU40">
         <nom>RS1 : Commande et diagnostic des systèmes complexes</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU41">
         <nom>RS2 : Systèmes à structure variable et planification</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU42">
         <nom>RS3 : Génie électrique et mécatronique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU43">
         <nom>RS4 : Pronostic des systèmes</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU44">
         <nom>RS5 : Procédés à énergie renouvelable</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU45">
         <nom>RS6 : Réseaux de neurones</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU46">
         <nom>RS7 : Conduite et gestion de la production</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU5">
         <nom>IM11 : Modélisation algorithmique, différentielle et discrète</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Enveloppe convexe, triangulation de Delaunay, diagramme de Voronoi, Courbures discrètes, Distances discrètes, Axes médians et squelettes, Topologie élémentaire et nombres de Betti</t>
@@ -974,13 +974,13 @@
       </unite>
       <unite id="ENSISCU55">
         <nom>IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU6">
         <nom>IM12 : Analyse de vidéo et reconnaissance de forme</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Détection de mouvement dans une séquence vidéo, Suivi d’objets, Reconnaissance de formes , Applications : Vidéo surveillance, Détection et suivi de personnes , Suivi des visages et détection des émotions</t>
@@ -990,7 +990,7 @@
       </unite>
       <unite id="ENSISCU7">
         <nom>IM13 : Vision industrielle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Introduction sur les capteurs , Vision active, Vision passive , Technique de mosaiquage d’images, Recalage multimodal, Reconstruction 3D, Application : Photogrammétrie, Inspection industrielle</t>
@@ -1000,7 +1000,7 @@
       </unite>
       <unite id="ENSISCU8">
         <nom>IM14 : Modèles pour la production d'images : CAO et jeux vidéo</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- la Conception Assistée par Ordinateur,</t>
@@ -1018,13 +1018,13 @@
     <semestre id="4">
       <unite id="ENSISDU3">
         <nom>R bib : Étude bibliographique</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISDU4">
         <nom>Stage de recherche</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
@@ -1042,7 +1042,7 @@
     <semestre id="3">
       <unite id="ENSISCU20">
         <nom>RTC : Concepts et fondamentaux de la modélisation</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Concepts et formalismes de base pour la modélisation temporelle et spatiale (modèles de comportements, modèles de structures et modèles géométriques) et la modélisation de l'information et de la connaissance (méthodes de représentation de la connaissance, formalismes logiques, expression de problèmes à l'aide de contraintes).</t>
@@ -1052,7 +1052,7 @@
       </unite>
       <unite id="ENSISCU1">
         <nom>AU4 : Classification, apprentissage et décision</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Méthodes non supervisées et supervisées, classification Bayésienne, évaluation et validation, logique floue</t>
@@ -1062,7 +1062,7 @@
       </unite>
       <unite id="ENSISCU2">
         <nom>IM8 : Segmentation 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Contours actifs, filtrage non linéaire/diffusion, approches stochastiques (Markov/Bayes)</t>
@@ -1072,19 +1072,19 @@
       </unite>
       <unite id="ENSISCU29">
         <nom>RIS1 : Traitement de données multimodales</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU3">
         <nom>IM6 : Animation et simulation physique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : 15h/h/15h</plan>
       </unite>
       <unite id="ENSISCU4">
         <nom>IM10 : Imagerie médicale</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Origine et nature des images médicales (les différentes modalités), Analyse des images médicales, Reconstruction et imagerie médicale 3D, Recalage d’images, Applications</t>
@@ -1094,7 +1094,7 @@
       </unite>
       <unite id="ENSISCU5">
         <nom>IM11 : Modélisation algorithmique, différentielle et discrète</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Enveloppe convexe, triangulation de Delaunay, diagramme de Voronoi, Courbures discrètes, Distances discrètes, Axes médians et squelettes, Topologie élémentaire et nombres de Betti</t>
@@ -1104,13 +1104,13 @@
       </unite>
       <unite id="ENSISCU55">
         <nom>IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU6">
         <nom>IM12 : Analyse de vidéo et reconnaissance de forme</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Détection de mouvement dans une séquence vidéo, Suivi d’objets, Reconnaissance de formes , Applications : Vidéo surveillance, Détection et suivi de personnes , Suivi des visages et détection des émotions</t>
@@ -1120,7 +1120,7 @@
       </unite>
       <unite id="ENSISCU7">
         <nom>IM13 : Vision industrielle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Introduction sur les capteurs , Vision active, Vision passive , Technique de mosaiquage d’images, Recalage multimodal, Reconstruction 3D, Application : Photogrammétrie, Inspection industrielle</t>
@@ -1130,7 +1130,7 @@
       </unite>
       <unite id="ENSISCU8">
         <nom>IM14 : Modèles pour la production d'images : CAO et jeux vidéo</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- la Conception Assistée par Ordinateur,</t>
@@ -1146,7 +1146,7 @@
       </unite>
       <unite id="ENSISCU21">
         <nom>RI1 : Fondements logiques et algorithmiques</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Introduction aux notions fondamentales logiques et algorithmiques qui trouvent leurs applications dans plusieurs domaines : systèmes multi-agents, vérification des systèmes, ontologies pour le web sémantique, traitement de connaissance incomplète et révisable, recherche d’information et fouilles des données. Le cours prévoit une partie portant sur la complexité structurelle nécessaire à l’analyse et à l’évaluation des tous formalismes logiques d’un point de vue algorithmique ainsi que sur les algorithmes probabilistes utilisés dans la recherche d’information et fouilles des données.</t>
@@ -1156,7 +1156,7 @@
       </unite>
       <unite id="ENSISCU22">
         <nom>RI2 : Fondements de programmation et de satisfiabilité</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Etude des problèmes de satisfaction de contraintes (CSP) et du problème de la satisfiabilité en logique propositionnelle (SAT). Nous nous intéressons en particulier aux questions portant sur la résolution de ces problèmes (méthodes et fondements théoriques) ainsi qu'aux fragments polynomiaux existant en SAT et CSP.</t>
@@ -1166,7 +1166,7 @@
       </unite>
       <unite id="ENSISCU23">
         <nom>RI3 : Représentation des connaissances : Approfondissement et applications</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Acquérir des notions avancées en représentation de connaissances et raisonnement dans les domaines de : la révision et la fusion des croyances, l’Answer Set Programming et les théories formelles de l’argumentation.</t>
@@ -1176,133 +1176,133 @@
       </unite>
       <unite id="ENSISCU24">
         <nom>RI4 : Planification, configuration et raisonnement temporel et spatial</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU25">
         <nom>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU26">
         <nom>RI6 : Approches avancées de conception de systèmes d'information</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU27">
         <nom>RI7 : Extraction et intégration d'information du web</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU28">
         <nom>RI8 : Web services</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU30">
         <nom>RIS2 : Formalises à éléments discrets</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU31">
         <nom>RIS3 : Simulation distribuée et modèles hétérogènes</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU32">
         <nom>RIS4 : Aide à la décision</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU33">
         <nom>R2 : Communication et interaction homme-machine</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU34">
         <nom>RE1 : Problématique, démarche, modèles et objects de conception</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU35">
         <nom>RE2 : Modèles et objets de conception</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU36">
         <nom>RE3 : Systèmes intelligents</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU37">
         <nom>RE4 : Conception et architecture</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU38">
         <nom>RO1 : Une UE extérieure de 3 crédits (validation requise)</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU39">
         <nom>RO2 : Une UE extérieure de 6 crédits (validation requise)</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU40">
         <nom>RS1 : Commande et diagnostic des systèmes complexes</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU41">
         <nom>RS2 : Systèmes à structure variable et planification</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU42">
         <nom>RS3 : Génie électrique et mécatronique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU43">
         <nom>RS4 : Pronostic des systèmes</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU44">
         <nom>RS5 : Procédés à énergie renouvelable</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU45">
         <nom>RS6 : Réseaux de neurones</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU46">
         <nom>RS7 : Conduite et gestion de la production</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
@@ -1310,13 +1310,13 @@
     <semestre id="4">
       <unite id="ENSISDU3">
         <nom>R bib : Étude bibliographique</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISDU4">
         <nom>Stage de recherche</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
@@ -1334,7 +1334,7 @@
     <semestre id="3">
       <unite id="ENSISCU20">
         <nom>RTC : Concepts et fondamentaux de la modélisation</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Concepts et formalismes de base pour la modélisation temporelle et spatiale (modèles de comportements, modèles de structures et modèles géométriques) et la modélisation de l'information et de la connaissance (méthodes de représentation de la connaissance, formalismes logiques, expression de problèmes à l'aide de contraintes).</t>
@@ -1344,91 +1344,91 @@
       </unite>
       <unite id="ENSISCU29">
         <nom>RIS1 : Traitement de données multimodales</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU30">
         <nom>RIS2 : Formalises à éléments discrets</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU31">
         <nom>RIS3 : Simulation distribuée et modèles hétérogènes</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU32">
         <nom>RIS4 : Aide à la décision</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU34">
         <nom>RE1 : Problématique, démarche, modèles et objects de conception</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU35">
         <nom>RE2 : Modèles et objets de conception</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU36">
         <nom>RE3 : Systèmes intelligents</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU40">
         <nom>RS1 : Commande et diagnostic des systèmes complexes</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU41">
         <nom>RS2 : Systèmes à structure variable et planification</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU42">
         <nom>RS3 : Génie électrique et mécatronique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU43">
         <nom>RS4 : Pronostic des systèmes</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU44">
         <nom>RS5 : Procédés à énergie renouvelable</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU45">
         <nom>RS6 : Réseaux de neurones</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU46">
         <nom>RS7 : Conduite et gestion de la production</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU1">
         <nom>AU4 : Classification, apprentissage et décision</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Méthodes non supervisées et supervisées, classification Bayésienne, évaluation et validation, logique floue</t>
@@ -1438,7 +1438,7 @@
       </unite>
       <unite id="ENSISCU2">
         <nom>IM8 : Segmentation 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Contours actifs, filtrage non linéaire/diffusion, approches stochastiques (Markov/Bayes)</t>
@@ -1448,7 +1448,7 @@
       </unite>
       <unite id="ENSISCU21">
         <nom>RI1 : Fondements logiques et algorithmiques</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Introduction aux notions fondamentales logiques et algorithmiques qui trouvent leurs applications dans plusieurs domaines : systèmes multi-agents, vérification des systèmes, ontologies pour le web sémantique, traitement de connaissance incomplète et révisable, recherche d’information et fouilles des données. Le cours prévoit une partie portant sur la complexité structurelle nécessaire à l’analyse et à l’évaluation des tous formalismes logiques d’un point de vue algorithmique ainsi que sur les algorithmes probabilistes utilisés dans la recherche d’information et fouilles des données.</t>
@@ -1458,7 +1458,7 @@
       </unite>
       <unite id="ENSISCU22">
         <nom>RI2 : Fondements de programmation et de satisfiabilité</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Etude des problèmes de satisfaction de contraintes (CSP) et du problème de la satisfiabilité en logique propositionnelle (SAT). Nous nous intéressons en particulier aux questions portant sur la résolution de ces problèmes (méthodes et fondements théoriques) ainsi qu'aux fragments polynomiaux existant en SAT et CSP.</t>
@@ -1468,7 +1468,7 @@
       </unite>
       <unite id="ENSISCU23">
         <nom>RI3 : Représentation des connaissances : Approfondissement et applications</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Acquérir des notions avancées en représentation de connaissances et raisonnement dans les domaines de : la révision et la fusion des croyances, l’Answer Set Programming et les théories formelles de l’argumentation.</t>
@@ -1478,67 +1478,67 @@
       </unite>
       <unite id="ENSISCU24">
         <nom>RI4 : Planification, configuration et raisonnement temporel et spatial</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU25">
         <nom>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU26">
         <nom>RI6 : Approches avancées de conception de systèmes d'information</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU27">
         <nom>RI7 : Extraction et intégration d'information du web</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU28">
         <nom>RI8 : Web services</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU3">
         <nom>IM6 : Animation et simulation physique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : 15h/h/15h</plan>
       </unite>
       <unite id="ENSISCU33">
         <nom>R2 : Communication et interaction homme-machine</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU37">
         <nom>RE4 : Conception et architecture</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU38">
         <nom>RO1 : Une UE extérieure de 3 crédits (validation requise)</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU39">
         <nom>RO2 : Une UE extérieure de 6 crédits (validation requise)</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU4">
         <nom>IM10 : Imagerie médicale</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Origine et nature des images médicales (les différentes modalités), Analyse des images médicales, Reconstruction et imagerie médicale 3D, Recalage d’images, Applications</t>
@@ -1548,7 +1548,7 @@
       </unite>
       <unite id="ENSISCU5">
         <nom>IM11 : Modélisation algorithmique, différentielle et discrète</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Enveloppe convexe, triangulation de Delaunay, diagramme de Voronoi, Courbures discrètes, Distances discrètes, Axes médians et squelettes, Topologie élémentaire et nombres de Betti</t>
@@ -1558,13 +1558,13 @@
       </unite>
       <unite id="ENSISCU55">
         <nom>IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISCU6">
         <nom>IM12 : Analyse de vidéo et reconnaissance de forme</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Détection de mouvement dans une séquence vidéo, Suivi d’objets, Reconnaissance de formes , Applications : Vidéo surveillance, Détection et suivi de personnes , Suivi des visages et détection des émotions</t>
@@ -1574,7 +1574,7 @@
       </unite>
       <unite id="ENSISCU7">
         <nom>IM13 : Vision industrielle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Introduction sur les capteurs , Vision active, Vision passive , Technique de mosaiquage d’images, Recalage multimodal, Reconstruction 3D, Application : Photogrammétrie, Inspection industrielle</t>
@@ -1584,7 +1584,7 @@
       </unite>
       <unite id="ENSISCU8">
         <nom>IM14 : Modèles pour la production d'images : CAO et jeux vidéo</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>- la Conception Assistée par Ordinateur,</t>
@@ -1602,13 +1602,13 @@
     <semestre id="4">
       <unite id="ENSISDU3">
         <nom>R bib : Étude bibliographique</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSISDU4">
         <nom>Stage de recherche</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
@@ -1624,7 +1624,7 @@
     <semestre id="3">
       <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</t>
@@ -1635,7 +1635,7 @@
       <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <ref-intervenant ref="BROCHE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</t>
@@ -1668,7 +1668,7 @@
       </unite>
       <unite id="ENSINCU29">
         <nom>Fiabilité logicielle 1</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Les bases du Test. Test d'intégration. Preuve de programme et Design by Contract. Test d'applications distribuées.</t>
@@ -1679,7 +1679,7 @@
       <unite id="ENSINCU30">
         <nom>Plateforme JEE</nom>
         <ref-intervenant ref="MASSAT"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Interface d'accès aux données (JDBC). Technologies pour la réalisation d'applications Client/Serveur sur le WEB (JSP/Servlet). Technologies pour la mise en œuvre de middleware (RMI/EJB).</t>
@@ -1690,7 +1690,7 @@
       <unite id="ENSINCU31">
         <nom>Systèmes hétérogènes</nom>
         <ref-intervenant ref="AGOPIAN"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Les parties magistrales de l'enseignement seront l'occasion d'aborder notamment les aspects suivants :</t>
@@ -1725,7 +1725,7 @@
         <nom>Sécurité internet et réseau</nom>
         <ref-intervenant ref="AGOPIAN"/>
         <ref-intervenant ref="GODARD"/>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Le cours aborde la sécurité de l'information sous deux aspects :</t>
@@ -1743,7 +1743,7 @@
       </unite>
       <unite id="ENSINCU33">
         <nom>Fiabilité logicielle 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Politique de Sécurité, Contrôle d'accès, Modèles de sécurité. Typage et Sécurité en Java. Analyse de programme.</t>
@@ -1754,7 +1754,7 @@
       <unite id="ENSINCU34">
         <nom>Qualité</nom>
         <ref-intervenant ref="MICHEL"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <b>Chapitre 1 : Introduction : Référentiels et Gestion de Service IT</b>
@@ -1809,7 +1809,7 @@
       </unite>
       <unite id="ENSINCU35">
         <nom>Sécurité des systèmes embarqués</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Contenu en cours d'élaboration.</t>
@@ -1820,7 +1820,7 @@
       <unite id="ENSINCU67">
         <nom>Projet d'entreprise</nom>
         <ref-intervenant ref="LAI"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.</t>
@@ -1832,7 +1832,7 @@
     <semestre id="4">
       <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</t>
@@ -1842,7 +1842,7 @@
       </unite>
       <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume>
           <p>
           <t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</t>
@@ -1862,7 +1862,7 @@
     <semestre id="3">
       <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</t>
@@ -1873,7 +1873,7 @@
       <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <ref-intervenant ref="BROCHE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</t>
@@ -1906,7 +1906,7 @@
       </unite>
       <unite id="ENSINCU29">
         <nom>Fiabilité logicielle 1</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Les bases du Test. Test d'intégration. Preuve de programme et Design by Contract. Test d'applications distribuées.</t>
@@ -1917,7 +1917,7 @@
       <unite id="ENSINCU30">
         <nom>Plateforme JEE</nom>
         <ref-intervenant ref="MASSAT"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Interface d'accès aux données (JDBC). Technologies pour la réalisation d'applications Client/Serveur sur le WEB (JSP/Servlet). Technologies pour la mise en œuvre de middleware (RMI/EJB).</t>
@@ -1928,7 +1928,7 @@
       <unite id="ENSINCU31">
         <nom>Systèmes hétérogènes</nom>
         <ref-intervenant ref="AGOPIAN"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Les parties magistrales de l'enseignement seront l'occasion d'aborder notamment les aspects suivants :</t>
@@ -1961,7 +1961,7 @@
       </unite>
       <unite id="ENSINCU36">
         <nom>Administration système et réseau</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L'objectif est de préparer les étudiants à l'administration d'un réseau d'ordinateurs. L'accent sera mis sur les aspects pratiques et concrets de l'administration d'un réseau d'entreprise pour les systèmes UNIX et Windows. A ce titre, une maquette constituée de plusieurs serveurs et stations sous Windows 2000/XP/Linux sera montée par les étudiants.</t>
@@ -1972,7 +1972,7 @@
       <unite id="ENSINCU37">
         <nom>Méthodes de développement</nom>
         <ref-intervenant ref="FAVRE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>En cours, sont vus les éléments suivants :</t>
@@ -1993,7 +1993,7 @@
       </unite>
       <unite id="ENSINCU38">
         <nom>Architecture logicielle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Architecture n-tiers. Architecture des applications WEB (MVC, Spring, Struts, JSF). Sécurité des applications WEB. Architecture par composants (EJB, IoC, Spring). Annuaire d'entreprise (JNDI).</t>
@@ -2003,7 +2003,7 @@
       </unite>
       <unite id="ENSINCU39">
         <nom>Intégration des données</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Modèle objet (standard de l'ODMG 1993-1997). Modèle relationnel-objet (norme SQL3 de 1999-2000). Principe des plateforme de correspondance objet-relationnel (ORM, JPA)</t>
@@ -2013,7 +2013,7 @@
       </unite>
       <unite id="ENSINCU40">
         <nom>Administration et alimentation de BD</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Architecture d’un SGBD (Oracle). Création, confidentialité, optimisation et sécurité d’une base de données. Migration de bases de données : techniques usuelles, maintenance de l’inter-dépendance entre bases de données. Alimentation, nettoyage et sélection des données en vue d'analyses.</t>
@@ -2024,7 +2024,7 @@
       <unite id="ENSINCU67">
         <nom>Projet d'entreprise</nom>
         <ref-intervenant ref="LAI"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.</t>
@@ -2036,7 +2036,7 @@
     <semestre id="4">
       <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</t>
@@ -2046,7 +2046,7 @@
       </unite>
       <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume>
           <p>
           <t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</t>
@@ -2066,7 +2066,7 @@
     <semestre id="3">
       <unite id="ENSINCU41">
         <nom>Qualité logicielle : outils et méthodes</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.</t>
@@ -2076,7 +2076,7 @@
       </unite>
       <unite id="ENSINCU42">
         <nom>Spécification logicielle</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Modèles formels, modèle SADT, logiciels temps réel, méthode SA-RT.</t>
@@ -2086,7 +2086,7 @@
       </unite>
       <unite id="ENSINCU43">
         <nom>Conception logicielle et IHM</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Conception objet, patrons de conception, conception IHM.</t>
@@ -2096,7 +2096,7 @@
       </unite>
       <unite id="ENSINCU44">
         <nom>Architecture logicielle JEE</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Composants logiciels , architectures N-tier, middleware, Entreprise Java Beans (EJB).</t>
@@ -2106,7 +2106,7 @@
       </unite>
       <unite id="ENSINCU45">
         <nom>Technologies du Web et Web 2.0</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Protocoles de communication, standards Web, Langages à balises, programmation Web, Ajax, XUL, standardisation et convergence d'interfaces.</t>
@@ -2116,7 +2116,7 @@
       </unite>
       <unite id="ENSINCU46">
         <nom>XML avancé</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Modélisation et navigation, XSchema et XPath avancés, Requêtage des bases documentaires, DOM et SAX avancés.</t>
@@ -2126,7 +2126,7 @@
       </unite>
       <unite id="ENSINCU47">
         <nom>Gestion de projet</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Définition et acteurs d'un projet, organisation d'un projet, techniques de planification, estimation prévisionnelle d'un projet, pilotage et contrôle d'un projet, recette finale.</t>
@@ -2136,7 +2136,7 @@
       </unite>
       <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</t>
@@ -2147,7 +2147,7 @@
       <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <ref-intervenant ref="BROCHE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</t>
@@ -2182,7 +2182,7 @@
     <semestre id="4">
       <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</t>
@@ -2192,7 +2192,7 @@
       </unite>
       <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume>
           <p>
           <t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</t>
@@ -2210,7 +2210,7 @@
     <semestre id="3">
       <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</t>
@@ -2221,7 +2221,7 @@
       <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <ref-intervenant ref="BROCHE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</t>
@@ -2255,7 +2255,7 @@
       <unite id="ENSINCU30">
         <nom>Plateforme JEE</nom>
         <ref-intervenant ref="MASSAT"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Interface d'accès aux données (JDBC). Technologies pour la réalisation d'applications Client/Serveur sur le WEB (JSP/Servlet). Technologies pour la mise en œuvre de middleware (RMI/EJB).</t>
@@ -2265,7 +2265,7 @@
       </unite>
       <unite id="ENSINCU40">
         <nom>Administration et alimentation de BD</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Architecture d’un SGBD (Oracle). Création, confidentialité, optimisation et sécurité d’une base de données. Migration de bases de données : techniques usuelles, maintenance de l’inter-dépendance entre bases de données. Alimentation, nettoyage et sélection des données en vue d'analyses.</t>
@@ -2275,7 +2275,7 @@
       </unite>
       <unite id="ENSINCU48">
         <nom>Optimisation linéaire</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Rappels de programmation linéaire.</t>
@@ -2294,13 +2294,13 @@
       </unite>
       <unite id="ENSINCU49">
         <nom>Fouille de Bases de Données (FBD)</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSINCU50">
         <nom>Méthodologie de conception d'applications décisionnelles</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Technique de nettoyage et de vérification des données.</t>
@@ -2322,7 +2322,7 @@
       </unite>
       <unite id="ENSINCU51">
         <nom>Entrepôt de Données</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>– Définition, caractéristique, particularité, architecture.</t>
@@ -2353,7 +2353,7 @@
       </unite>
       <unite id="ENSINCU52">
         <nom>Fouille de Données Avancée</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Extraction des règles de corrélation.</t>
@@ -2373,7 +2373,7 @@
       <unite id="ENSINCU67">
         <nom>Projet d'entreprise</nom>
         <ref-intervenant ref="LAI"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.</t>
@@ -2385,7 +2385,7 @@
     <semestre id="4">
       <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</t>
@@ -2395,7 +2395,7 @@
       </unite>
       <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume>
           <p>
           <t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</t>
@@ -2415,7 +2415,7 @@
     <semestre id="3">
       <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</t>
@@ -2426,7 +2426,7 @@
       <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <ref-intervenant ref="BROCHE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</t>
@@ -2460,7 +2460,7 @@
       <unite id="ENSINCU30">
         <nom>Plateforme JEE</nom>
         <ref-intervenant ref="MASSAT"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Interface d'accès aux données (JDBC). Technologies pour la réalisation d'applications Client/Serveur sur le WEB (JSP/Servlet). Technologies pour la mise en œuvre de middleware (RMI/EJB).</t>
@@ -2470,7 +2470,7 @@
       </unite>
       <unite id="ENSINCU40">
         <nom>Administration et alimentation de BD</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Architecture d’un SGBD (Oracle). Création, confidentialité, optimisation et sécurité d’une base de données. Migration de bases de données : techniques usuelles, maintenance de l’inter-dépendance entre bases de données. Alimentation, nettoyage et sélection des données en vue d'analyses.</t>
@@ -2480,7 +2480,7 @@
       </unite>
       <unite id="ENSINCU48">
         <nom>Optimisation linéaire</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Rappels de programmation linéaire.</t>
@@ -2499,13 +2499,13 @@
       </unite>
       <unite id="ENSINCU49">
         <nom>Fouille de Bases de Données (FBD)</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume/>
         <plan>Cours/TD/TP : h/h/h</plan>
       </unite>
       <unite id="ENSINCU50">
         <nom>Méthodologie de conception d'applications décisionnelles</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Technique de nettoyage et de vérification des données.</t>
@@ -2527,7 +2527,7 @@
       </unite>
       <unite id="ENSINCU53">
         <nom>Modélisation en RO</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Modélisation mathématique d'un problème d'optimisation.</t>
@@ -2549,7 +2549,7 @@
       </unite>
       <unite id="ENSINCU54">
         <nom>Recherche locale</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Introduction et méthodologie.</t>
@@ -2574,7 +2574,7 @@
       </unite>
       <unite id="ENSINCU55">
         <nom>Programmation en Nombres Entiers</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>– Formulations de programmes en nombres entiers.</t>
@@ -2600,7 +2600,7 @@
       <unite id="ENSINCU67">
         <nom>Projet d'entreprise</nom>
         <ref-intervenant ref="LAI"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.</t>
@@ -2612,7 +2612,7 @@
     <semestre id="4">
       <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</t>
@@ -2622,7 +2622,7 @@
       </unite>
       <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume>
           <p>
           <t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</t>
@@ -2644,7 +2644,7 @@
     <semestre id="3">
       <unite id="ENSINCU56">
         <nom>Traitement automatique de la parole</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L'objectif de ce cours est de présenter d'une part les principaux formalismes, modèles et algorithmes pour le traitement automatique de l'oral et d'autre part les outils logiciels permettant de construire une application incluant de la reconnaissance et/ou de la synthèse vocale. Le but de ce cours est de donner aux étudiants une connaissance du potentiel et des limites de la technologie actuelle dans ce domaine.</t>
@@ -2654,7 +2654,7 @@
       </unite>
       <unite id="ENSINCU57">
         <nom>Indexation et recherche d'images et vidéos</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Ce cours présente les techniques d’analyse pour l’indexation et la recherche dans des corpus d'images et de vidéos : calcul de caractéristiques, segmentation en plans et fusion d’indexes.</t>
@@ -2664,7 +2664,7 @@
       </unite>
       <unite id="ENSINCU58">
         <nom>Apprentissage automatique et classification</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>La classification par apprentissage automatique (supervisé et non supervisé) est introduite dans ses objectifs et ses principes. En s'appuyant sur des méthodes éprouvées (arbres de décision, classifieur naïf de Bayes, SVM, k-means, etc.), les grands principes de l'apprentissage automatique pour la classification sont présentés, et illustrés dans le cas de données multimedia (texte et image). Un accent tout particulier est porté sur l'environnement méthodologique de l'apprentissage automatique (estimation de paramètres, évaluation des classifieurs, données manquantes ou bruitées, etc.)</t>
@@ -2674,7 +2674,7 @@
       </unite>
       <unite id="ENSINCU59">
         <nom>Traitement et indexation des données multimédia</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Ce cours présente une introduction au domaine de la Recherche d’Information Multimédia. La première partie du cours introduit les principes généraux de la RI, appliqués aux documents textuels : indexation ; interrogation ; évaluation. Les modèles classiques : booléen, vectoriel et probabiliste sont présentés, ainsi que les notions d’extension de requête et de bouclage de pertinence. Ce cours s'intéresse aussi aux spécificités des différents formats image et vidéo et présente des solutions pratique pour la mise en oeuvre de serveurs de streaming vidéo.</t>
@@ -2684,7 +2684,7 @@
       </unite>
       <unite id="ENSINCU19">
         <nom>Modèles et connaissances linguistiques pour le TAL</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Traitement automatique des langues dans ses aspects applications. Différentes types de connaissances et modèles symboliques sur la langue. Plusieurs ressources linguistiques pour le français sont examinées.</t>
@@ -2694,7 +2694,7 @@
       </unite>
       <unite id="ENSINCU20">
         <nom>Syntaxe et sémantique : modèles et outils</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Principes et nature des représentations syntaxiques et sémantiques associables à une phrase. Différents formalismes seront étudiés pour exprimer ces représentations.</t>
@@ -2704,7 +2704,7 @@
       </unite>
       <unite id="ENSINCU21">
         <nom>Modèles numériques pour le TAL</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Présentation des modèles numériques utilisés pour différentes tâches du Traitement Automatique des Langue. Algorithmes qui permettent d'en estimer les paramètres à partir de données et les algorithmes de décodage.</t>
@@ -2714,7 +2714,7 @@
       </unite>
       <unite id="ENSINCU4">
         <nom>Nouveaux défis en apprentissage</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Étude des méthodes d'apprentissage qui traitent, de façon tant théorique qu'appliquée, séparément ou simultanément, un ou plusieurs problèmes classiques</t>
@@ -2724,7 +2724,7 @@
       </unite>
       <unite id="ENSINCU5">
         <nom>Théorie de l'apprentissage</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Avancées récentes en théorie de l'apprentissage statistique : complexité de Rademacher, bornes PAC-Bayes, stabilité algorithmique, schémas de compression.</t>
@@ -2734,7 +2734,7 @@
       </unite>
       <unite id="ENSINCU6">
         <nom>Inférence grammaticale</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Large panorama des différents algorithmes et résultats obtenus récemment pour l'apprentissage de représentations grammaticales de langages</t>
@@ -2744,7 +2744,7 @@
       </unite>
       <unite id="ENSINCU7">
         <nom>Apprentissage numérique</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Étude de quelques unes des méthodes les plus performantes en apprentissage numérique : les réseaux de neurones, les modèles de Markov cachés et les machines à vecteurs de support.</t>
@@ -2754,7 +2754,7 @@
       </unite>
       <unite id="ENSINCU66">
         <nom>Nouvelles applications du Traitement Automatique de la Langue (TAL)</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>État de l'art dans différentes applications du Traitement Automatique des</t>
@@ -2767,7 +2767,7 @@
       </unite>
       <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</t>
@@ -2778,7 +2778,7 @@
       <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <ref-intervenant ref="BROCHE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</t>
@@ -2812,7 +2812,7 @@
       <unite id="ENSINCU67">
         <nom>Projet d'entreprise</nom>
         <ref-intervenant ref="LAI"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.</t>
@@ -2824,7 +2824,7 @@
     <semestre id="4">
       <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</t>
@@ -2834,7 +2834,7 @@
       </unite>
       <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume>
           <p>
           <t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</t>
@@ -2856,7 +2856,7 @@
     <semestre id="3">
       <unite id="ENSINCU60">
         <nom>Architecture d'applications réparties sur le Web</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Cette UE contient les concepts et outils de base pour le développement de systèmes et d'applications distribués sur le Web. Les architectures client serveur seront revisitées, et un focus particulier sera fait sur les servlets, JSP, EJB, J2EE etc.</t>
@@ -2866,7 +2866,7 @@
       </unite>
       <unite id="ENSINCU61">
         <nom>Services Web et Business Process</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>La première partie de cette UE sera consacrée à la conception, le développement et déploiement de services Web. Les standards de services Web seront étudiés (WDSL, UDDI, SOAP, etc.), et des applications seront réalisées.</t>
@@ -2882,7 +2882,7 @@
       </unite>
       <unite id="ENSINCU62">
         <nom>Web Multimédia</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Cette UE analyse les problèmes fondamentaux et techniques que pose le développement d'applications multimédia (images, vidéo, son, etc.) et l’architecture logicielle nécessaire pour supporter le traitement de telles données. Cela permet d'abord une familiarisation avec les problèmes de streaming, de VoD, etc. Seront ensuite étudiés les problèmes que pose la mise en ligne de telles applications : passage à l’échelle, tolérance aux pannes, etc. Enfin, nous étudions l’intégration des services de téléphonie sur IP dans une telle application tout en considérant la personnalisation d’accès à l’information multimédia et aux services disponibles.</t>
@@ -2892,7 +2892,7 @@
       </unite>
       <unite id="ENSINCU63">
         <nom>Processus d'entreprise - ERP</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Un ERP ou progiciel de gestion intégrée est un logiciel qui permet de gérer l'ensemble des processus opérationnels d'une entreprise, en intégrant l'ensemble des fonctions de cette comme la gestion des ressources humaines, la gestion comptable, financière, mais aussi la vente, la distribution, l'approvisionnement, le commerce électronique.</t>
@@ -2908,7 +2908,7 @@
       </unite>
       <unite id="ENSINCU64">
         <nom>Applications mobiles et réseaux sociaux</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Le Web permet aujourd’hui à des entités sociales (individus, groupes, organisations) de s’organiser en réseaux et d’interagir pour diffuser et échanger de l’information et éventuellement des services.</t>
@@ -2924,7 +2924,7 @@
       </unite>
       <unite id="ENSINCU65">
         <nom>Gestion de projet</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Cette UE vise à inculquer un mode de fonctionnement projet. Les aspects techniques (délais, jalons, indicateurs, etc.) et humains (communication, gestion ds conflits, etc) seront abordés.</t>
@@ -2934,7 +2934,7 @@
       </unite>
       <unite id="ENSINCU27">
         <nom>Anglais 2</nom>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</t>
@@ -2945,7 +2945,7 @@
       <unite id="ENSINCU28">
         <nom>Communication 2</nom>
         <ref-intervenant ref="BROCHE"/>
-        <credits>3</credits>
+        <nbCredits>3</nbCredits>
         <resume>
           <p>
           <t>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</t>
@@ -2980,7 +2980,7 @@
     <semestre id="4">
       <unite id="ENSINDU3">
         <nom>Projet industriel de mise en application</nom>
-        <credits>6</credits>
+        <nbCredits>6</nbCredits>
         <resume>
           <p>
           <t>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</t>
@@ -2990,7 +2990,7 @@
       </unite>
       <unite id="ENSINDU4">
         <nom>Stage en entreprise</nom>
-        <credits>24</credits>
+        <nbCredits>24</nbCredits>
         <resume>
           <p>
           <t>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</t>
@@ -3003,104 +3003,154 @@
           La formation est fortement adossée à la recherche : les enseignants chercheurs membres de l'équipe pédagogique effectuent leur recherche dans les domaines de compétence visés par la formation. L’équipe a contribué dans les domaines suivants : intégration de données hétérogènes et réparties, services web, technologies XML, e-Learning, personnalisation pour les Mobiles, et sécurité dans le Cloud.
         </debouche>
   </parcours>
-  <intervenant id="IN10388">
+  <intervenant id="FAVRE">
     <nom>BenoitFAVRE</nom>
-    <mail>FAVRE</mail>
+    <mail>Benoit.
+					FAVRE@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN12068">
+  <intervenant id="HABET">
     <nom>DjamalHABET</nom>
-    <mail>HABET</mail>
+    <mail>Djamal.
+					HABET@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN12316">
+  <intervenant id="DEMONGODIN">
     <nom>IsabelleDEMONGODIN</nom>
-    <mail>DEMONGODIN</mail>
+    <mail>Isabelle.
+					DEMONGODIN@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN12544">
+  <intervenant id="BOUCELMA">
     <nom>OmarBOUCELMA</nom>
-    <mail>BOUCELMA</mail>
+    <mail>Omar.
+					BOUCELMA@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN12632">
+  <intervenant id="OLIVETTI">
     <nom>NicolaOLIVETTI</nom>
-    <mail>OLIVETTI</mail>
+    <mail>Nicola.
+					OLIVETTI@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN12834">
+  <intervenant id="OUTBIB">
     <nom>RachidOUTBIB</nom>
-    <mail>OUTBIB</mail>
+    <mail>Rachid.
+					OUTBIB@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN12969">
+  <intervenant id="RENE CHABAROT">
     <nom>LydieRENE CHABAROT</nom>
-    <mail>RENE CHABAROT</mail>
+    <mail>Lydie.
+					RENE CHABAROT@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN13794">
+  <intervenant id="OLIVE">
     <nom>FredericOLIVE</nom>
-    <mail>OLIVE</mail>
+    <mail>Frederic.
+					OLIVE@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN14758">
+  <intervenant id="BROCHE">
     <nom>MartineBROCHE</nom>
-    <mail>BROCHE</mail>
+    <mail>Martine.
+					BROCHE@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN16209">
+  <intervenant id="RALAIVOLA">
     <nom>Hery LivaRALAIVOLA</nom>
-    <mail>RALAIVOLA</mail>
+    <mail>Hery Liva.
+					RALAIVOLA@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN16625">
+  <intervenant id="SELLAMI">
     <nom>SanaSELLAMI</nom>
-    <mail>SELLAMI</mail>
+    <mail>Sana.
+					SELLAMI@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN17708">
+  <intervenant id="MICHEL">
     <nom>StephaneMICHEL</nom>
-    <mail>MICHEL</mail>
+    <mail>Stephane.
+					MICHEL@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN18">
+  <intervenant id="MASSAT">
     <nom>Jean LucMASSAT</nom>
-    <mail>MASSAT</mail>
+    <mail>Jean Luc.
+					MASSAT@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN2563">
+  <intervenant id="GODARD">
     <nom>EmmanuelGODARD</nom>
-    <mail>GODARD</mail>
+    <mail>Emmanuel.
+					GODARD@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN3524">
+  <intervenant id="LUGIEZ">
     <nom>DenisLUGIEZ</nom>
-    <mail>LUGIEZ</mail>
+    <mail>Denis.
+					LUGIEZ@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN616">
+  <intervenant id="AGOPIAN">
     <nom>RolandAGOPIAN</nom>
-    <mail>AGOPIAN</mail>
+    <mail>Roland.
+					AGOPIAN@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN6213">
+  <intervenant id="LABOUREL">
     <nom>ArnaudLABOUREL</nom>
-    <mail>LABOUREL</mail>
+    <mail>Arnaud.
+					LABOUREL@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN7001">
+  <intervenant id="CREIGNOU">
     <nom>NadiaCREIGNOU</nom>
-    <mail>CREIGNOU</mail>
+    <mail>Nadia.
+					CREIGNOU@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN7680">
+  <intervenant id="LAI">
     <nom>ClaudeLAI</nom>
-    <mail>LAI</mail>
+    <mail>Claude.
+					LAI@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN7722">
+  <intervenant id="NOVELLI">
     <nom>NoelNOVELLI</nom>
-    <mail>NOVELLI</mail>
+    <mail>Noel.
+					NOVELLI@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN7931">
+  <intervenant id="RISCH">
     <nom>SylvieRISCH</nom>
-    <mail>RISCH</mail>
+    <mail>Sylvie.
+					RISCH@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN8006">
+  <intervenant id="BOI">
     <nom>Jean MarcBOI</nom>
-    <mail>BOI</mail>
+    <mail>Jean Marc.
+					BOI@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN8086">
+  <intervenant id="VAXES">
     <nom>YannVAXES</nom>
-    <mail>VAXES</mail>
+    <mail>Yann.
+					VAXES@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN9224">
+  <intervenant id="MORIN">
     <nom>RemiMORIN</nom>
-    <mail>MORIN</mail>
+    <mail>Remi.
+					MORIN@univ-amu.fr
+				</mail>
   </intervenant>
-  <intervenant id="IN9941">
+  <intervenant id="BECHET">
     <nom>FredericBECHET</nom>
-    <mail>BECHET</mail>
+    <mail>Frederic.
+					BECHET@univ-amu.fr
+				</mail>
   </intervenant>
 </master>

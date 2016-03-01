@@ -6,18 +6,6 @@
   %w3centities-f;
 ]>
 
-<!--
-A FAIRE : 
-	- Étape 3 : Construire la liste des intervenants qui n'enseignent qu'à Luminy 
-	(une seule expression XPATH).
-	- Pour améliorer l'efficacité de vos transformations XSL, 
-	utilisez la clause xsl:key afin de pouvoir retrouver facilement les UE à partir 
-	des identifiants des intervenants.
-	Profitez-en pour lister (avec la règle nommée précédente), les intervenants 
-	qui s'occupent de trois UE.
-
-
--->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
@@ -543,6 +531,9 @@ Liste tous les semestres ainsi que leurs détails
 		<xsl:variable name="lieu" select="lieu" />
 		<xsl:variable name="nomUE" select="nom" />
 		
+<!--
+		<xsl:if test="(($nbCredits=3) and ($lieu='Luminy'))">
+-->
 		<xsl:if test="(($nbCredits=3) and ($lieu='Luminy'))">
 			<li><a href="unites-{@id}.html"><xsl:value-of select="$nomUE" /></a></li>
 		</xsl:if>

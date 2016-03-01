@@ -120,7 +120,7 @@
 
 							</xsl:for-each>
 
-							<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+							<nbCredits><xsl:value-of select="info[@nom='nb_credits']/@value"/></nbCredits>
 							<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
 							<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
 						</unite>
@@ -168,7 +168,7 @@
 
 							</xsl:for-each>
 
-							<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+							<nbCredits><xsl:value-of select="info[@nom='nb_credits']/@value"/></nbCredits>
 							<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
 							<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
 						</unite>
@@ -208,7 +208,7 @@
 						
 							</xsl:for-each>
 					
-							<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+							<nbCredits><xsl:value-of select="info[@nom='nb_credits']/@value"/></nbCredits>
 							<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
 							<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
 						</unite>
@@ -222,13 +222,17 @@
 		<xsl:template name="intervenants">
 		<xsl:for-each select="//objet[@type = 'personne']">
 			<xsl:variable name="idIntervenant" select="@id"/>
+			<xsl:variable name="nomIntervenant" select="info[@nom='nom']/@value"/>
 			<intervenant>
 				<xsl:attribute name="id">
-					<xsl:value-of select="$idIntervenant"/>
+					<xsl:value-of select="$nomIntervenant"/>
 				</xsl:attribute>
 <!-- Mettre un espace entre le prenom et le nom-->
 				<nom><xsl:value-of select="info[@nom='prenom']/@value"/><xsl:value-of select="info[@nom='nom']/@value"/></nom>
-				<mail><xsl:value-of select="info[@nom='nom']/@value"/></mail>
+				<mail>
+					<xsl:value-of select="info[@nom='prenom']/@value"/>.
+					<xsl:value-of select="info[@nom='nom']/@value"/>@univ-amu.fr
+				</mail>
 <!-- Pas de lieu donc mettre dans la dtd en optionnel OU rajouter-->
 			</intervenant>
 		</xsl:for-each>
@@ -265,7 +269,7 @@
 			
 				</xsl:for-each>
 		
-				<credits><xsl:value-of select="info[@nom='nb_credits']/@value"/></credits>
+				<nbCredits><xsl:value-of select="info[@nom='nb_credits']/@value"/></nbCredits>
 				<resume><xsl:copy-of select="info[@nom='contenu']/*"/></resume>
 				<plan>Cours/TD/TP : <xsl:value-of select="info[@nom='vol_cm']/@value"/>h/<xsl:value-of select="info[@nom='vol_td']/@value"/>h/<xsl:value-of select="info[@nom='vol_tp']/@value"/>h</plan>
 <!-- Pas de lieu donc mettre dans la dtd en optionnel OU rajouter-->
