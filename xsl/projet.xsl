@@ -183,12 +183,13 @@ FIN TEST
 Crée une page par unité
 -->
 	<xsl:template name="page_par_unite">
-			<xsl:for-each select="parcours/semestre/unite">
-				<xsl:variable name="id" select="parcours/semestre/unite"/>
+			<xsl:for-each select="unite">
+				<xsl:variable name="id" select="unite"/>
 				<xsl:document href="www/unites-{@id}.html">
 				<html>
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+						<link rel="stylesheet" type="text/css" href="../css/unite.css"/>
 						<title><xsl:value-of select="nom"/></title>
 					</head>
 					<body>
@@ -215,6 +216,7 @@ Crée une page par intervenant
 				<html>
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+						<link rel="stylesheet" type="text/css" href="../css/intervenant.css"/>
 						<title><xsl:value-of select="nom"/></title>
 					</head>
 					<body>
@@ -307,8 +309,8 @@ Liste de tous les unités
 -->
 			<div class="sous-titre-index">Liste des unités : </div>
 			<ul>
-				<xsl:for-each select="parcours/semestre/unite">
-					<xsl:variable name="id" select="parcours/semestre/unite"/>
+				<xsl:for-each select="unite">
+					<xsl:variable name="id" select="unite"/>
 						<li><a href="unites-{@id}.html">
 								<xsl:value-of select="nom"/>
 						</a></li>
@@ -327,14 +329,33 @@ Liste les intervenants avec les détails de ces dernier
 			<xsl:call-template name="intervenant"/>
 		</xsl:for-each>
 	</xsl:template>
+	
+	<xsl:template name="ref-intervenants">
+		<xsl:for-each select="ref-intervenant">
+			<xsl:call-template name="affiche-intervenant-a-partir-de-ref"/>
+		</xsl:for-each>
+	</xsl:template>
+	
+	<xsl:template name="affiche-intervenant-a-partir-de-ref">
+		<xsl:variable name="refInter" select="@ref"/>
+		<xsl:for-each select="//intervenant">
+			<xsl:variable name="idInter" select="@id"/>
+			
+			<xsl:if test="$refInter=$idInter">
+				<xsl:call-template name="link-name-intervenant"/>
+			</xsl:if>
+			
+		</xsl:for-each>
+	</xsl:template>
 
 <!--
 Détail d'un intervenant
 -->
 	<xsl:template name="intervenant">
 		<div class="contour-intervenant">
+			<xsl:variable name="idInter" select="@id" />
 			<ul>
-				<li>id : <xsl:value-of select="@id"/></li>
+				<li>id : <a href="intervenant-{$idInter}.html"><xsl:value-of select="@id"/></a></li>
 				<li>nom : <xsl:value-of select="nom"/></li>
 				<li>Email : <xsl:value-of select="mail"/></li>
 				<li>Lien : <xsl:element name="a">
@@ -411,8 +432,14 @@ Liste les parcours dont les intervenant sont responsable
 Liste toutes les unités ainsi que leurs détails
 -->
 	<xsl:template name="details_unites">
-		<xsl:for-each select="parcours/semestre/unite">
+		<xsl:for-each select="unite">
 			<xsl:call-template name="details_unite"/>
+		</xsl:for-each>
+	</xsl:template>
+	
+	<xsl:template name="details_ref_unites">
+		<xsl:for-each select="@ref">
+			<xsl:call-template name="affiche-unite-a-partir-de-ref"/>
 		</xsl:for-each>
 	</xsl:template>
 	
@@ -421,7 +448,7 @@ Détail d'une unité
 -->
 	<xsl:template name="details_unite">
 		<div class="contour-unite">
-			<xsl:variable name="id" select="parcours/semestre/unite"/>
+			<xsl:variable name="id" select="unite"/>
 			<div class="sous-titre-intervenants" id="{@id}">
 				Unité : <a href="unites-{@id}.html"><xsl:value-of select="nom"/></a> 
 			</div>
@@ -447,14 +474,14 @@ Détail d'une unité
 Liste tous les parcours avec les détails de ces dernier
 -->	
 	<xsl:template name="parcours">
-	<h2>Parcours : <xsl:value-of select="nom"/></h2>
-	<h3>Responsable(s) : </h3> <xsl:call-template name="intervenants"/>
-	<xsl:call-template name="description"/>
+		<h2>Parcours : <xsl:value-of select="nom"/></h2>
+		<h3>Responsable(s) : </h3> <xsl:call-template name="ref-intervenants"/>
+		<xsl:call-template name="description"/>
+		<xsl:call-template name="debouche"/>
 
-	<xsl:apply-templates select="semestre"/>
+		<xsl:apply-templates select="semestre"/>
 	
-	<xsl:call-template name="details_unites"/>
-	
+		<xsl:call-template name="details_ref_unites"/>
 	<!--
 	<xsl:call-template name="debouche"/>
 -->
@@ -463,13 +490,16 @@ Liste tous les parcours avec les détails de ces dernier
 <!--
 Liste tous les semestres ainsi que leurs détails
 -->
+<!--
 	<xsl:template match="semestre">
+		
 		<h2>semestre : <xsl:value-of select="@numero"/></h2>
-		<xsl:apply-templates select="unite"/>
+		<xsl:apply-templates select="ref-unite"/>
 		<xsl:apply-templates select="description"/>
 		<xsl:apply-templates select="debouche"/>
 		<xsl:apply-templates select="semestre"/>
 	</xsl:template>
+-->
 		
 	<xsl:template name="unite_appartenant_a_un_parcours">
 	
@@ -480,9 +510,8 @@ Liste tous les semestres ainsi que leurs détails
 			<xsl:for-each select="//parcours">
 				<xsl:variable name="nomParcours" select="nom"/>
 				<xsl:variable name="idParcours" select="@id"/>
-				
-						<xsl:for-each select="./semestre/unite">
-							<xsl:variable name="idUeCourante" select="@id"/>
+						<xsl:for-each select="./semestre/ref-unite">
+							<xsl:variable name="idUeCourante" select="@ref"/>
 								
 								<xsl:if test="$idUnite=$idUeCourante">
 									<li>
@@ -498,8 +527,26 @@ Liste tous les semestres ainsi que leurs détails
 			</ul>
 	</xsl:template>
 	
+	<xsl:template name="affiche-unite-a-partir-de-ref">
+		<xsl:variable name="refUnite" select="@ref"/>
+		<xsl:for-each select="unite">
+			<xsl:variable name="idUnite" select="@id"/>
+			<xsl:if test="$refUnite=$idUnite">
+				<xsl:call-template name="details_unite"/>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>
+	
 	<xsl:template match="ref-intervenant">
 			<li><a href="intervenant-{@ref}.html"><xsl:value-of select="@ref"/></a></li>
+	</xsl:template>
+	
+	<xsl:template name="link-name-intervenant">
+			<li><a href="intervenant-{@id}.html"><xsl:value-of select="nom"/></a></li>
+	</xsl:template>
+	
+	<xsl:template match="ref-unite">
+			<li><a href="unites-{@ref}.html"><xsl:value-of select="@ref"/></a></li>
 	</xsl:template>
 
 	<xsl:template match="unite">
@@ -507,8 +554,10 @@ Liste tous les semestres ainsi que leurs détails
 	</xsl:template>
 
 	<xsl:template match="semestre">
+		<xsl:apply-templates select="description"/>
+		<xsl:apply-templates select="debouche"/>
 		<div class="sous-titre-intervenants">Semestre <xsl:value-of select="@numero"/> : </div>
-		<ul><xsl:apply-templates select="unite"/></ul>
+		<ul><xsl:apply-templates select="ref-unite"/></ul>
 	</xsl:template>
 		
 	<xsl:template name="description">
@@ -519,7 +568,7 @@ Liste tous les semestres ainsi que leurs détails
 
 	<xsl:template name="debouche">
 		<p>
-			<xsl:value-of select="description"/>
+			<xsl:value-of select="debouche"/>
 		</p>
 	</xsl:template>
 

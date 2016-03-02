@@ -17,7 +17,7 @@ La partie Java
 	
 Le devoir à rendre
 	- Vous devez utiliser XSLT 2.0 (avec le produit Saxon voir explication XQuery).
-	- Améliorer le CSS
+	~ Améliorer le CSS
 	- Finir le Makefile
 	- Utiliser XQuery
 

@@ -43,8 +43,9 @@ tidy:
 	tidy -im -asxhtml -indent www/index.html
 
 
-#xq:
-
+xq:
+	java -cp saxon/saxon9he.jar net.sf.saxon.Query indent=no xq.txt > www/xq.xhtml
+	
 java:
 	javac ./java/SampleCreateDom.java
 	java ./java/SampleCreateDom

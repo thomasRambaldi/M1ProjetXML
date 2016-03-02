@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+http://www.w3schools.com/xml/schema_complex.asp
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <xs:element name="infosup"/>
+  
+  <xs:element name="master">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="parcours"/>
+        <xs:element maxOccurs="unbounded" ref="intervenant"/>
+        <xs:element maxOccurs="unbounded" ref="unite"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+<xs:complexType name="uniteInfo">
+	<xs:sequence>
+	   <!-- Ajout d'info complementaire -->
+<!--
+        <xs:any processContents="lax" minOccurs="0"/>
+-->
+        
+	<xs:element ref="nom"/>
+	<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant"/>
+	<xs:element ref="nbCredits"/>
+	<xs:element ref="resume"/>
+	<xs:element minOccurs="0" ref="plan"/>
+	<xs:element ref="lieu"/>
+  </xs:sequence>
+      
+  <xs:attribute name="id" type="xs:ID"/>
+  
+  <xs:attribute name="role">
+	<xs:simpleType>
+	  <xs:restriction base="xs:token">
+		<xs:enumeration value="obligatoire"/>
+		<xs:enumeration value="option"/>
+	  </xs:restriction>
+	</xs:simpleType>
+  </xs:attribute>
+</xs:complexType>
+
+<xs:element name="unite" type="uniteInfo"/>
+
+<!-- restriction du type complexe des unités d'enseignement pour coder les unités d'enseignement de Luminy -->
+  <xs:complexType name="uniteLuminy">
+  <xs:complexContent>
+      <xs:restriction base="uniteInfo">
+		<xs:sequence>
+			<xs:element name="lieu" type="xs:string" fixed="Luminy" />
+		</xs:sequence>
+        <xs:attribute name="id" type="xs:ID"/>
+      </xs:restriction>
+   </xs:complexContent>
+  </xs:complexType>
+
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="idUE" type="xs:string"/>
+  <xs:element name="nbCredits" type="xs:string"/>
+  <xs:element name="resume" type="xs:string"/>
+  <xs:element name="plan" type="xs:string"/>
+  <xs:element name="lieu" type="xs:string"/>
+  <xs:element name="mail" type="xs:string"/>
+  <xs:element name="web" type="xs:string"/>
+  
+	<xs:complexType name="intervenantInfo">
+	  <xs:sequence>
+		<!--Ajout d'info complementaire-->
+<!--
+		<xs:any processContents="lax" minOccurs="0"/>
+-->
+		<xs:element ref="nom"/>
+		<xs:element ref="mail"/>
+		<xs:element ref="web"/>
+<!--
+		<xs:any processContents="lax" minOccurs="0"/>
+-->
+	  </xs:sequence>
+	  
+	  <xs:attribute name="id" type="xs:ID"/>
+	</xs:complexType>
+  
+	<xs:element name="intervenant" type="intervenantInfo"/>
+    
+	<!-- Extension d'un intervenant pour obtenir une personne en lui ajoutant une adresse. -->
+	<xs:complexType name="intervenantAvecAdresse">
+		<xs:complexContent>
+			<xs:extension base="intervenantInfo">
+				<xs:sequence>
+					<xs:element name="adresse" type="xs:string"/>
+				</xs:sequence>
+<!--
+				<xs:attribute name="id" type="xs:ID"/>
+-->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+  
+	<xs:element name="ref-intervenant">
+		<xs:complexType>
+		  <xs:attribute name="ref" use="required" type="xs:IDREF"/>
+		</xs:complexType>
+	</xs:element>
+  
+	<xs:element name="ref-unite">
+		<xs:complexType mixed="true">
+		  <xs:attribute name="ref" use="required" type="xs:IDREF"/>
+		</xs:complexType>
+	</xs:element>
+  
+	<xs:element name="parcours">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element ref="nom"/>
+			<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant"/>
+			<xs:element ref="description"/>
+			<xs:element maxOccurs="unbounded" ref="semestre"/>
+			<xs:element maxOccurs="unbounded" ref="debouche"/>
+		  </xs:sequence>
+		  <xs:attribute name="id" use="required" type="xs:ID"/>
+		</xs:complexType>
+	</xs:element>
+  
+	<xs:element name="responsable">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element maxOccurs="unbounded" ref="intervenant"/>
+		  </xs:sequence>
+		</xs:complexType>
+	</xs:element>
+  
+	  <xs:element name="nomRes" type="xs:string"/>
+	  <xs:element name="description" type="xs:string"/>
+	  <xs:element name="debouche" type="xs:string"/>
+  
+	<xs:element name="semestre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ref-unite"/>
+      </xs:sequence>
+      <xs:attribute name="numero">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

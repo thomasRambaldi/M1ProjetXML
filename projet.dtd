@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!ELEMENT master (parcours+, intervenant+)>
+<!ELEMENT master (parcours+, intervenant+, unite+)>
 <!ELEMENT unite    (nom, ref-intervenant*, nbCredits, resume, plan?, lieu?)>
 <!ELEMENT nom      (#PCDATA)>
 <!ELEMENT idUE  (#PCDATA)>
@@ -34,7 +34,7 @@
 <!ELEMENT description     (#PCDATA)>
 <!ELEMENT debouche   (#PCDATA)>
 
-<!ELEMENT semestre (unite+)>
+<!ELEMENT semestre (ref-unite+)>
 <!ATTLIST unite role (obligatoire|option) #IMPLIED>
 <!ATTLIST semestre numero (1|2|3|4) #IMPLIED>
 

@@ -1,18 +1,38 @@
-rédiger une requête XQuery permettant de produire une page XHTML qui liste 
-les enseignants avec, pour chacun, les enseignements qu'il assure et 
-les parcours dans lesquels il intervient. Prenez soin de trier tous les résultats.
 
 
-doc("newProjet.xml")
-declare variable $msg := ("msg1","msg2");
-<ul>
-{
-	for $x in doc("newProjet.xml")/master/parcours/semestre/unite
-		let $nomUE := $x/nom
-		let $idUE := $x/@id
-	order by $x
-	return <li>{$x}</li>
-}
-</ul>
+<intervenant>{
+	<ol>{
+	
+		<li>{
+			let $uniteTmp := ""
+			for $intervenant in doc("newProjet.xml")/master/intervenant
+				order by $intervenant
+				return <name>{data($intervenant/nom)}
+				{
+					for $unite in doc("newProjet.xml")/master/unite
+						order by $unite
+						return if ($intervenant/@id = $unite/ref-intervenant/@ref) then (
+						for $parcours in doc("newProjet.xml")/master/parcours
+							order by $parcours
+							for $refUnite in $parcours/semestre/ref-unite
+								return (if ($refUnite/@ref = $unite/@id)
+								then   (
+											<unite> 
+												{data($unite/nom)}
+											
+											<parcours> 
+												{data($parcours/nom)}
+											</parcours>
+											</unite>
+										)
+								else ()
+								)
+						)
+						else ()	
+				}
+				</name>	
 
+		}</li>
+	}</ol>
 
+}</intervenant>
