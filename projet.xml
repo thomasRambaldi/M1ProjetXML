@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
 <!DOCTYPE master SYSTEM "projet.dtd"[
 	<!ENTITY  dom.luminy  "univ-mrs.fr" >
 	<!ENTITY  dom.dil     "dil.&dom.luminy;" >
@@ -9,11 +7,7 @@
 	<!ENTITY  stCh  "Saint-Charles">
 	<!ENTITY  stJe  "Saint-Jérome">
 ]>
--->
-
-
-<master	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-		xsi:noNamespaceSchemaLocation="projet.xsd">
+--><master xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projet.xsd">
 			
 	<parcours id="TC">
 		<nom>Tronc commun</nom>
@@ -156,7 +150,7 @@
 		<web>http://pageperso.lif.univ-mrs.fr/~luigi.santocanale/</web>
 	</intervenant>
 	
-	<unite role="obligatoire" id="ENSINAU1">
+	<unite id="ENSINAU1" role="obligatoire">
 		<nom>Génie Logiciel</nom>
 		
 			<ref-intervenant ref="arrighi"/>
@@ -174,7 +168,7 @@
 		<lieu>Luminy</lieu>	
 	</unite>
 	
-	<unite role="obligatoire" id="ENSINAU2">
+	<unite id="ENSINAU2" role="obligatoire">
 			<nom>Complexité</nom>
 			
 				<ref-intervenant ref="perrot"/>
@@ -191,7 +185,7 @@
 			<lieu>Luminy</lieu>
 		</unite>
 		 
-	<unite role="obligatoire" id="ENSINAU3">
+	<unite id="ENSINAU3" role="obligatoire">
 		<nom>Réseaux</nom>
 		
 		<ref-intervenant ref="godard"/>
@@ -212,7 +206,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="obligatoire" id="ENSINAU4">
+	<unite id="ENSINAU4" role="obligatoire">
 		<nom>Programmation fonctionnelle</nom>
 		
 		<ref-intervenant ref="santocanale"/>
@@ -236,7 +230,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="obligatoire" id="ENSINAU12">
+	<unite id="ENSINAU12" role="obligatoire">
 			<nom>BDR : approfondissement</nom>
 			
 				<ref-intervenant ref="sabatier"/>
@@ -250,7 +244,7 @@
 			<lieu>Luminy</lieu>
 		</unite>
 	
-	<unite role="option" id="ENSINAU6">
+	<unite id="ENSINAU6" role="option">
 		<nom>Programmation logique</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -263,7 +257,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="option" id="ENSINAU7">
+	<unite id="ENSINAU7" role="option">
 		<nom>Outils de l'internet</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -278,7 +272,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="option" id="ENSINAU8">
+	<unite id="ENSINAU8" role="option">
 		<nom>Système embarqué</nom>
 		<ref-intervenant ref="niebert"/>
 		<nbCredits>3</nbCredits>
@@ -289,7 +283,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="option" id="ENSINAU9">
+	<unite id="ENSINAU9" role="option">
 		<nom> Fondamentaux pour l'ingénierie des langues</nom>
 		
 			<ref-intervenant ref="bechet"/>
@@ -305,7 +299,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="option" id="ENSINAU10">
+	<unite id="ENSINAU10" role="option">
 		<nom>Modèles à évènements discrets</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -316,7 +310,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="option" id="ENSINAU13">
+	<unite id="ENSINAU13" role="option">
 		<nom>Pratique de la cryptographie</nom>
 		<ref-intervenant ref="morin"/>
 		<nbCredits>3</nbCredits>
@@ -327,7 +321,7 @@
 		<lieu>Luminy</lieu>
 	</unite>  
 		
-	<unite role="obligatoire" id="ENSINBU1">
+	<unite id="ENSINBU1" role="obligatoire">
 		<nom>Anglais</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -337,7 +331,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	
-	<unite role="obligatoire" id="ENSINBU2">
+	<unite id="ENSINBU2" role="obligatoire">
 		<nom>Communication</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -362,7 +356,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="obligatoire" id="ENSINBU4">
+	<unite id="ENSINBU4" role="obligatoire">
 		<nom>XML</nom>
 		<ref-intervenant ref="massat"/>
 		<nbCredits>3</nbCredits>
@@ -374,7 +368,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="obligatoire" id="ENSINBU5">
+	<unite id="ENSINBU5" role="obligatoire">
 		<nom>Algorithme et recherche opérationelle</nom>
 		<ref-intervenant ref="chepoi"/>
 		<nbCredits>3</nbCredits>
@@ -389,7 +383,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="obligatoire" id="ENSINBU15">
+	<unite id="ENSINBU15" role="obligatoire">
 		<nom>Programmation parallèle</nom>
 		<ref-intervenant ref="morin"/>
 		<nbCredits>3</nbCredits>
@@ -400,7 +394,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="option" id="ENSINBU6">
+	<unite id="ENSINBU6" role="option">
 		<nom>Projet</nom>
 		<nbCredits>6</nbCredits>
 		<resume>
@@ -410,7 +404,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="option" id="ENSINBU7">
+	<unite id="ENSINBU7" role="option">
 		<nom>Stage de deux moins</nom>
 		<nbCredits>6</nbCredits>
 		<resume>
@@ -420,7 +414,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="option" id="ENSINBU8">
+	<unite id="ENSINBU8" role="option">
 		<nom>Sémantique</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -448,7 +442,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="option" id="ENSINBU9">
+	<unite id="ENSINBU9" role="option">
 		<nom>Algorithme distribuée</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -458,7 +452,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="option" id="ENSINBU10">
+	<unite id="ENSINBU10" role="option">
 		<nom>Intégration des systèmes d'information</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -471,7 +465,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 	
-	<unite role="option" id="ENSINBU11">
+	<unite id="ENSINBU11" role="option">
 		<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 		<ref-intervenant ref="novelli"/>
 		<nbCredits>3</nbCredits>
@@ -484,7 +478,7 @@
 		<lieu>Luminy</lieu>
 	</unite>  
 	
-	<unite role="option" id="ENSINBU12">
+	<unite id="ENSINBU12" role="option">
 		<nom>Intelligence artificielle</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -499,7 +493,7 @@
 		<lieu>Luminy</lieu>
 	</unite>  
 	
-	<unite role="option" id="ENSINBU13">
+	<unite id="ENSINBU13" role="option">
 		<nom>Algorithme à performance garantie</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -514,7 +508,7 @@
 		<lieu>Luminy</lieu>
 	</unite>  
 	
-	<unite role="option" id="ENSINBU16">
+	<unite id="ENSINBU16" role="option">
 		<nom>Introduction à l'apprentissage automatique</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -524,7 +518,7 @@
 		<lieu>Luminy</lieu>
 	</unite>  			
 			
-	<unite role="obligatoire" id="ENSINCU29">
+	<unite id="ENSINCU29" role="obligatoire">
 		<nom>Fiabilité logicielle 1</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -538,7 +532,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 
-	<unite role="obligatoire" id="ENSINCU30">
+	<unite id="ENSINCU30" role="obligatoire">
 		<nom>Plateforme JEE</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -560,7 +554,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	 
-	<unite role="obligatoire" id="ENSINCU37">
+	<unite id="ENSINCU37" role="obligatoire">
 		<nom>Méthodes de développement</nom>
 		<nbCredits>3</nbCredits>
 		<resume>
@@ -573,7 +567,7 @@
 		<lieu>Luminy</lieu>
 	</unite> 
 		
-	<unite role="obligatoire" id="ENSINDU3">
+	<unite id="ENSINDU3" role="obligatoire">
 		<nom>Projet industriel de mise en application</nom>
 		<nbCredits>6</nbCredits>
 		<resume>
@@ -583,7 +577,7 @@
 		<lieu>Luminy</lieu>
 	</unite>
 	
-	<unite role="obligatoire" id="ENSINDU4">
+	<unite id="ENSINDU4" role="obligatoire">
 		<nom>Stage en entreprise</nom>
 		<nbCredits>3</nbCredits>
 		<resume>

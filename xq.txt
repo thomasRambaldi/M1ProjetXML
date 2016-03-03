@@ -1,38 +1,40 @@
 
 
-<intervenant>{
+<intervenants>{
 	<ol>{
-	
 		<li>{
-			let $uniteTmp := ""
 			for $intervenant in doc("newProjet.xml")/master/intervenant
+				let $ue := ""
 				order by $intervenant
-				return <name>{data($intervenant/nom)}
-				{
-					for $unite in doc("newProjet.xml")/master/unite
-						order by $unite
-						return if ($intervenant/@id = $unite/ref-intervenant/@ref) then (
-						for $parcours in doc("newProjet.xml")/master/parcours
-							order by $parcours
-							for $refUnite in $parcours/semestre/ref-unite
-								return (if ($refUnite/@ref = $unite/@id)
-								then   (
-											<unite> 
-												{data($unite/nom)}
-											
+				return <name>{
+					data($intervenant/nom)}
+					<li>{
+						for $unite in doc("newProjet.xml")/master/unite
+							where $unite/ref-intervenant/@ref = $intervenant/@id
+							order by $unite
+							return  (
+									<unite> 
+										{data($unite/nom)}
+									</unite>
+							)
+					}</li>
+					<li>{
+						for $unite in doc("newProjet.xml")/master/unite
+							where $unite/ref-intervenant/@ref = $intervenant/@id
+							return  (
+									for $parcours in doc("newProjet.xml")/master/parcours
+										where $parcours/semestre/ref-unite/@ref = $unite/@id
+										order by $parcours
+										return  (
 											<parcours> 
 												{data($parcours/nom)}
 											</parcours>
-											</unite>
 										)
-								else ()
-								)
-						)
-						else ()	
-				}
+									)	
+					}</li>
 				</name>	
-
 		}</li>
 	}</ol>
 
-}</intervenant>
+}</intervenants>
+

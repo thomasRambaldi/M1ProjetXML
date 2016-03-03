@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--
-<!DOCTYPE stylesheet [
-  <!ENTITY % w3centities-f PUBLIC "-//W3C//ENTITIES Combined Set//EN//XML"
-      "http://www.w3.org/2003/entities/2007/w3centities-f.ent">
-  %w3centities-f;
-]>
--->
-
-
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
 	<xsl:output method="html" encoding="utf-8"/>
@@ -23,129 +14,141 @@
 Branche principal master
 -->
 	<xsl:template match="master">
-		<html>
-<!--
-			<head>
-				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-				
-				<title>Projet</title>
-				<xsl:call-template name="liste_des_intervenants"/>
-				<xsl:call-template name="liste_des_unites"/>
-				<h3>Détails des intervenants : </h3>
-				<xsl:apply-templates select="intervenant"/>
-				<h3>Détails des unités : </h3>
-				<xsl:call-template name="details_unites"/>
-			</head>
--->
-			
-			<xsl:document href="www/index.html">
+			<xsl:document href="www/index.html" method="xml"
+				encoding="UTF-8" indent="yes" doctype-public="//W3C//DTD XHTML 1.0 Strict//EN"
+				doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 				<html>
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-						<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+						<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+						<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
 						<title>Index</title>
 					</head>
 					<body>
-						<div class="index">
-							<img src="../res/logo-sciences1.png" alt="logo-sciences" />
-	<!--
-						a finir : test
-	-->
-	<!--
-					 <xsl:call-template name="loop">
-					  <xsl:with-param name="i" select="0"/>
-					  <xsl:with-param name="limit" select="3"/>
-					</xsl:call-template>
-	-->
 
-	<!--
-							<xsl:for-each select="key('ue_a_partir_intervenant', 'morin')">
-								<xsl:value-of select="($i)+1"/>
-								<xsl:for-each select="//unite">
-									
-									<xsl:if test="">
-										
-									</xsl:if>
-								</xsl:for-each>
-								
-							</xsl:for-each>
-	-->
 							
-							
-							<h5>
-								<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
-								<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
-								<a href="unites.html">Liste des unites</a>
-							</h5>
-							
-							<h1>Les masters de Luminy</h1>
-							<xsl:call-template name="liste_des_intervenants"/>
-							<xsl:call-template name="liste_des_parcours"/>
-							<xsl:call-template name="liste_des_unites"/>
+							<nav class="w3-sidenav w3-light-grey" style="width:10%">
+							  <img src="../res/logo-sciences1.png" alt="logo-sciences" width="150" height="50" />	
+							  <a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
+							  <a href="unites.html">Liste des unites</a>
+							   <a href="parcours.html">Liste des parcours</a>
+							  			
+							</nav>
+							<div id="main" style="margin-left:10%">
+
+							<header class="w3-container w3-blue-grey">
+							  <h1>Les masters de Luminy</h1>
+							</header>		
 							
 							<div class="sous-titre-index">Liste des unités à 3 crédits se déroulant à Luminy : </div>
 							
 							<xsl:element name="ol">
 								<xsl:for-each select="//unite">
 										<xsl:call-template name="liste-des-UE-a-3-credits"/>
-	<!--
-											<xsl:with-param name="lieu" select="lieu" />
-											<xsl:with-param name="nomUe" select="nom" />
-											<xsl:with-param name="nbCredits" select="nbCredits" />
-	-->
 								</xsl:for-each>
 							</xsl:element>
-	<!--
-						a finir
-	-->
+
 							<div class="sous-titre-index">Liste des intervenants enseignant qu'à Luminy : </div>
-							<xsl:element name="ol">
-								<xsl:for-each select="//unite">
-									<xsl:call-template name="liste-des-intervenant-enseingant-luminy"/>
-								</xsl:for-each>
-							</xsl:element>
-						</div>
+								<xsl:element name="ol">
+									<xsl:for-each select="//unite">
+										<xsl:call-template name="liste-des-intervenant-enseignant-luminy"/>
+									</xsl:for-each>
+								</xsl:element>
+				
+						<footer class="w3-container w3-blue-grey">
+							<h5>Auteurs</h5>
+							<p>Kévin Lebreton</p>
+							<p>Thomas Rambaldi</p>
+						</footer>
+					</div>
 					</body>
+					
 				</html>
 			</xsl:document>
 			
-			<xsl:document href="www/intervenants.html">
+			<xsl:document href="www/intervenants.html" method="xml"
+				encoding="UTF-8" indent="yes" doctype-public="//W3C//DTD XHTML 1.0 Strict//EN"
+				doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 				<html>
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-						<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+						<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+						<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
 						<title>Intervenants</title>
 					</head>
 					<body>
+						<nav class="w3-sidenav w3-light-grey" style="width:10%">
+							  <img src="../res/logo-sciences1.png" alt="logo-sciences" width="150" height="50" />
+							  <a href="index.html">Retour vers la page d'accueil</a> 
+							  <a href="unites.html">Liste des unites</a>
+							  <a href="parcours.html">Liste des parcours</a>				
+							</nav>
+							<div id="main" style="margin-left:10%">
 						<div class="intervenants">
-							<h5>
-								<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
-								<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
-								<a href="unites.html">Liste des unites</a>
-							</h5>
-							<h1>Liste des intervenants</h1>
+													<header class="w3-container w3-blue-grey">
+							  <h1>Liste des intervenants</h1>
+							</header>
 							<xsl:call-template name="intervenants"/>
+						</div>
 						</div>
 					</body>
 				</html>
 			</xsl:document>
 						
-			<xsl:document href="www/unites.html">
+			<xsl:document href="www/unites.html" method="xml"
+				encoding="UTF-8" indent="yes" doctype-public="//W3C//DTD XHTML 1.0 Strict//EN"
+				doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 				<html>
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-						<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+						<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+						<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
 						<title>Unites</title>
 					</head>
 					<body>
+						<nav class="w3-sidenav w3-light-grey" style="width:10%">
+							  <img src="../res/logo-sciences1.png" alt="logo-sciences" width="150" height="50" />
+							  <a href="index.html">Retour vers la page d'accueil</a>
+							  <a href="intervenants.html">Liste des intervenants</a>
+							  <a href="parcours.html">Liste des parcours</a>				
+						</nav>
+						<div id="main" style="margin-left:10%">
 						<div class="unites">
-							<h5>
-								<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
-								<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
-								<a href="unites.html">Liste des unites</a>
-							</h5>
-							<h1>Liste des unités</h1>
+							<header class="w3-container w3-blue-grey">
+							  <h1>Liste des unités</h1>
+							
+							</header>
 							<xsl:call-template name="details_unites"/>
+						</div>
+						</div>
+					</body>
+				</html>
+			</xsl:document>
+			
+			<xsl:document href="www/parcours.html" method="xml"
+				encoding="UTF-8" indent="yes" doctype-public="//W3C//DTD XHTML 1.0 Strict//EN"
+				doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+				<html>
+					<head>
+						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+						<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+						<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+						<title>Unites</title>
+					</head>
+					<body>
+						<nav class="w3-sidenav w3-light-grey" style="width:10%">
+							  <img src="../res/logo-sciences1.png" alt="logo-sciences" width="150" height="50" />
+							  <a href="index.html">Retour vers la page d'accueil</a>
+							  <a href="intervenants.html">Liste des intervenants</a>
+							  <a href="unites.html">Liste des unites</a>
+						</nav>
+						<div id="main" style="margin-left:10%">
+						<div class="unites">
+							<header class="w3-container w3-blue-grey">
+							  <h1>Liste des parcours</h1>
+							</header>
+							<xsl:call-template name="details_parcours"/>
+						</div>
 						</div>
 					</body>
 				</html>
@@ -154,30 +157,7 @@ Branche principal master
 			<xsl:call-template name="page_par_unite"/>
 			<xsl:call-template name="page_par_intervenant"/>
 			<xsl:call-template name="page_par_parcours"/>
-
-		</html>
 	</xsl:template>
-
-
-<!--
-TEST
--->
- <xsl:template name="loop">
-    <xsl:param name="i"/>
-    <xsl:param name="limit"/>
-    <xsl:if test="$i &lt; $limit">
-      <div>
-        <xsl:value-of select="$i"/>
-      </div>
-      <xsl:call-template name="loop">
-        <xsl:with-param name="i" select="$i+1"/>
-        <xsl:with-param name="limit" select="$limit"/>
-      </xsl:call-template>
-    </xsl:if>
-  </xsl:template>
-<!--
-FIN TEST
--->
 
 <!--
 Crée une page par unité
@@ -185,21 +165,30 @@ Crée une page par unité
 	<xsl:template name="page_par_unite">
 			<xsl:for-each select="unite">
 				<xsl:variable name="id" select="unite"/>
-				<xsl:document href="www/unites-{@id}.html">
+				<xsl:document href="www/unite-{@id}.html" method="xml"
+				encoding="UTF-8" indent="yes" doctype-public="//W3C//DTD XHTML 1.0 Strict//EN"
+				doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 				<html>
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-						<link rel="stylesheet" type="text/css" href="../css/unite.css"/>
+						<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+						<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
 						<title><xsl:value-of select="nom"/></title>
 					</head>
 					<body>
-						<h5>
-							<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
-							<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
-							<a href="unites.html">Liste des unites</a>
-						</h5>
-						<h2>Unite : <xsl:value-of select="nom"/></h2>
-						<xsl:call-template name="details_unite"/>
+						<nav class="w3-sidenav w3-light-grey" style="width:10%">
+							  <img src="../res/logo-sciences1.png" alt="logo-sciences" width="150" height="50" />
+							  <a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+							  <a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
+							  <a href="unites.html">Liste des unites</a>
+							  <a href="parcours.html">Liste des parcours</a>				
+							</nav>
+							<div id="main" style="margin-left:10%">
+							<header class="w3-container w3-blue-grey">
+							  <h2>Unite : <xsl:value-of select="nom"/></h2>
+							</header>	
+							<xsl:call-template name="details_unite"/>
+						</div>
 					</body>
 				</html>
 				</xsl:document>
@@ -212,21 +201,30 @@ Crée une page par intervenant
 	<xsl:template name="page_par_intervenant">
 			<xsl:for-each select="intervenant">
 				<xsl:variable name="id" select="intervenant"/>
-				<xsl:document href="www/intervenant-{@id}.html">
+				<xsl:document href="www/intervenant-{@id}.html" method="xml"
+				encoding="UTF-8" indent="yes" doctype-public="//W3C//DTD XHTML 1.0 Strict//EN"
+				doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 				<html>
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-						<link rel="stylesheet" type="text/css" href="../css/intervenant.css"/>
+						<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+						<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
 						<title><xsl:value-of select="nom"/></title>
 					</head>
 					<body>
-						<h5>
-							<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
-							<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
-							<a href="unites.html">Liste des unites</a>
-						</h5>
-						<h2>Intervenant : <xsl:value-of select="nom"/></h2>
+						<nav class="w3-sidenav w3-light-grey" style="width:10%">
+							  <img src="../res/logo-sciences1.png" alt="logo-sciences" width="150" height="50" />
+							  <a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+							  <a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
+							  <a href="unites.html">Liste des unites</a>
+							  <a href="parcours.html">Liste des parcours</a>				
+							</nav>
+							<div id="main" style="margin-left:10%">
+								<header class="w3-container w3-blue-grey">
+							  <h2>Intervenant : <xsl:value-of select="nom"/></h2>
+							</header>
 						<xsl:call-template name="intervenant"/>
+						</div>
 					</body>
 				</html>
 				</xsl:document>
@@ -239,19 +237,30 @@ Crée une page par parcours
 	<xsl:template name="page_par_parcours">
 		<xsl:for-each select="parcours">
 			<xsl:variable name="id" select="parcours"/>
-			<xsl:document href="www/parcours-{@id}.html">
+			<xsl:document href="www/parcours-{@id}.html" method="xml"
+				encoding="UTF-8" indent="yes" doctype-public="//W3C//DTD XHTML 1.0 Strict//EN"
+				doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 			<html>
 				<head>
 					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+					<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+						<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
 					<title><xsl:value-of select="nom"/></title>
 				</head>
 				<body>
-						<h5>
-							<a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
-							<a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
-							<a href="unites.html">Liste des unites</a>
-						</h5>
-					<xsl:call-template name="parcours"/>
+					<nav class="w3-sidenav w3-light-grey" style="width:10%">
+							  <img src="../res/logo-sciences1.png" alt="logo-sciences" width="150" height="50" />	
+							  <a href="index.html">Retour vers la page d'accueil</a> <xsl:text> </xsl:text>
+							  <a href="intervenants.html">Liste des intervenants</a> <xsl:text> </xsl:text>
+							  <a href="unites.html">Liste des unites</a>				
+							  <a href="parcours.html">Liste des parcours</a>				
+							</nav>
+							<div id="main" style="margin-left:10%">
+							<header class="w3-container w3-blue-grey">
+							  <h2>Parcours : <xsl:value-of select="nom"/></h2>
+							</header>
+							<xsl:call-template name="parcours"/>
+					</div>
 				</body>
 			</html>
 			</xsl:document>
@@ -262,9 +271,6 @@ Crée une page par parcours
 Liste tous les intervenants
 -->
 	<xsl:template name="liste_des_intervenants">
-<!--
-		<div class="sous-titre-intervenants">
--->
 			<div class="sous-titre-index">Liste des intervenants : </div>
 			<ul> 
 				<xsl:for-each select="intervenant">
@@ -274,18 +280,12 @@ Liste tous les intervenants
 					</a></li>
 				</xsl:for-each>
 			</ul>
-<!--
-		</div>
--->
 	</xsl:template>
 
 <!--
 Liste tous les parcours
 -->
 	<xsl:template name="liste_des_parcours">
-<!--
-		<div class="sous-titre-intervenants">
--->
 			<div class="sous-titre-index">Liste des parcours : </div>
 			<ul>
 				<xsl:for-each select="parcours">
@@ -295,30 +295,21 @@ Liste tous les parcours
 						</a></li>
 				</xsl:for-each>
 			</ul>
-<!--
-		</div>
--->
 	</xsl:template>
 
 <!--
 Liste de tous les unités
 -->
 	<xsl:template name="liste_des_unites">
-<!--
-		<div class="sous-titre-intervenants">
--->
 			<div class="sous-titre-index">Liste des unités : </div>
 			<ul>
 				<xsl:for-each select="unite">
 					<xsl:variable name="id" select="unite"/>
-						<li><a href="unites-{@id}.html">
+						<li><a href="unite-{@id}.html">
 								<xsl:value-of select="nom"/>
 						</a></li>
 				</xsl:for-each>
 			</ul>
-<!--
-		</div>
--->
 	</xsl:template>
 
 <!--
@@ -326,13 +317,24 @@ Liste les intervenants avec les détails de ces dernier
 -->
 	<xsl:template name="intervenants">
 		<xsl:for-each select="intervenant">
-			<xsl:call-template name="intervenant"/>
+			<xsl:call-template name="liste_intervenant"/>
 		</xsl:for-each>
 	</xsl:template>
 	
+	<xsl:template name="liste_intervenant">
+		<div class="contour-intervenant">
+			<xsl:variable name="idInter" select="@id" />
+			<ul>
+				<li><a href="intervenant-{$idInter}.html"><xsl:value-of select="nom"/></a></li>
+			</ul>
+		</div>
+	</xsl:template>
+	
+	
 	<xsl:template name="ref-intervenants">
 		<xsl:for-each select="ref-intervenant">
-			<xsl:call-template name="affiche-intervenant-a-partir-de-ref"/>
+			<xsl:variable name="idInt" select="@ref"/>
+			<li><a href="intervenant-{@ref}.html"><xsl:value-of select="//intervenant[@id=$idInt]/nom"/></a></li>
 		</xsl:for-each>
 	</xsl:template>
 	
@@ -355,13 +357,16 @@ Détail d'un intervenant
 		<div class="contour-intervenant">
 			<xsl:variable name="idInter" select="@id" />
 			<ul>
-				<li>id : <a href="intervenant-{$idInter}.html"><xsl:value-of select="@id"/></a></li>
+				<li>id : <xsl:value-of select="@id"/></li>
 				<li>nom : <xsl:value-of select="nom"/></li>
 				<li>Email : <xsl:value-of select="mail"/></li>
-				<li>Lien : <xsl:element name="a">
+				<xsl:if test="web">
+					<li>Lien : <xsl:element name="a">
 							<xsl:attribute name="href"><xsl:value-of select="web"/></xsl:attribute>
 							<xsl:value-of select="web"/>
-						</xsl:element></li>
+						</xsl:element>
+					</li>
+				</xsl:if>		
 			</ul>
 		
 		<xsl:call-template name="liste_des_unites_par_intervenant"/>
@@ -386,7 +391,7 @@ Liste les unitées enseignés pour chaque intervenant
 							
 							<xsl:if test="$idInter=$inter">
 								<li>
-									<a href="unites-{$idUe}.html">
+									<a href="unite-{$idUe}.html">
 										<xsl:value-of select="$NomUe"/>
 									</a>
 								</li>
@@ -433,8 +438,17 @@ Liste toutes les unités ainsi que leurs détails
 -->
 	<xsl:template name="details_unites">
 		<xsl:for-each select="unite">
-			<xsl:call-template name="details_unite"/>
+			<xsl:call-template name="listes_unite"/>
 		</xsl:for-each>
+	</xsl:template>
+	
+	<xsl:template name="listes_unite">
+		<div class="contour-unite">
+			<xsl:variable name="id" select="unite"/>
+			<div class="sous-titre-intervenants" id="{@id}">
+				<ul><li><a href="unite-{@id}.html"><xsl:value-of select="nom"/></a></li></ul> 
+			</div>
+		</div>
 	</xsl:template>
 	
 	<xsl:template name="details_ref_unites">
@@ -449,32 +463,51 @@ Détail d'une unité
 	<xsl:template name="details_unite">
 		<div class="contour-unite">
 			<xsl:variable name="id" select="unite"/>
-			<div class="sous-titre-intervenants" id="{@id}">
-				Unité : <a href="unites-{@id}.html"><xsl:value-of select="nom"/></a> 
-			</div>
-			<p>
 				id : <xsl:value-of select="@id"/><br/>
-				unité : <xsl:value-of select="@role"/><br/>
 				<xsl:if test="ref-intervenant">
 					Enseignant(s) : 
 					<ul><xsl:apply-templates select="ref-intervenant"/></ul>
 				</xsl:if>
 				Credits : <xsl:apply-templates select="nbCredits"/><br/>
 				Résume : <br/><xsl:apply-templates select="resume"/><br/>
-				Plan : <xsl:apply-templates select="plan"/><br/>
-				Lieu : <xsl:apply-templates select="lieu"/><br />
-					
+				<xsl:if test="plan">
+					Plan : <xsl:value-of select="plan"/><br/>
+				</xsl:if>
+				<xsl:if test="lieu">
+					Lieu : <xsl:call-template name="lieu"/><br />
+				</xsl:if>	
 				<xsl:call-template name="unite_appartenant_a_un_parcours"/>
-						
-			</p>
 		</div>
+	</xsl:template>
+	
+	<xsl:template name="details_parcours">
+		<xsl:for-each select="parcours">
+			<xsl:call-template name="details_parcour"/>
+		</xsl:for-each>
+	</xsl:template>
+	
+	<xsl:template name="details_parcour">
+		<div class="contour-unite">
+			<xsl:variable name="id" select="unite"/>
+			<div class="sous-titre-intervenants" id="{@id}">
+				<ul><li><a href="parcours-{@id}.html"><xsl:value-of select="nom"/></a></li></ul>
+			</div>
+		</div>
+	</xsl:template>
+
+<!--
+Liste tous les lieu de l'unité
+-->
+	<xsl:template name="lieu">
+		<xsl:for-each select="lieu">
+			<xsl:text> / </xsl:text> <xsl:value-of select="."/>
+		</xsl:for-each>
 	</xsl:template>
 
 <!--
 Liste tous les parcours avec les détails de ces dernier
 -->	
 	<xsl:template name="parcours">
-		<h2>Parcours : <xsl:value-of select="nom"/></h2>
 		<h3>Responsable(s) : </h3> <xsl:call-template name="ref-intervenants"/>
 		<xsl:call-template name="description"/>
 		<xsl:call-template name="debouche"/>
@@ -482,25 +515,8 @@ Liste tous les parcours avec les détails de ces dernier
 		<xsl:apply-templates select="semestre"/>
 	
 		<xsl:call-template name="details_ref_unites"/>
-	<!--
-	<xsl:call-template name="debouche"/>
--->
 	</xsl:template>
-
-<!--
-Liste tous les semestres ainsi que leurs détails
--->
-<!--
-	<xsl:template match="semestre">
-		
-		<h2>semestre : <xsl:value-of select="@numero"/></h2>
-		<xsl:apply-templates select="ref-unite"/>
-		<xsl:apply-templates select="description"/>
-		<xsl:apply-templates select="debouche"/>
-		<xsl:apply-templates select="semestre"/>
-	</xsl:template>
--->
-		
+	
 	<xsl:template name="unite_appartenant_a_un_parcours">
 	
 		<div class="sous-titre-index">Cette unité appartient au parcours : </div>
@@ -546,11 +562,12 @@ Liste tous les semestres ainsi que leurs détails
 	</xsl:template>
 	
 	<xsl:template match="ref-unite">
-			<li><a href="unites-{@ref}.html"><xsl:value-of select="@ref"/></a></li>
+			<xsl:variable name="idUE" select="@ref"/>
+			<li><a href="unite-{@ref}.html"><xsl:value-of select="//unite[@id=$idUE]/nom"/></a></li>
 	</xsl:template>
 
 	<xsl:template match="unite">
-		<li><a href="unites-{@id}.html"><xsl:value-of select="@id"/></a></li>
+		<li><a href="unite-{@id}.html"><xsl:value-of select="@id"/></a></li>
 	</xsl:template>
 
 	<xsl:template match="semestre">
@@ -573,42 +590,30 @@ Liste tous les semestres ainsi que leurs détails
 	</xsl:template>
 
 	<xsl:template name="liste-des-UE-a-3-credits" >
-<!--
-		<xsl:param name="lieu" select="Luminy"/>
-		<xsl:param name="nomUe" select="nom"/>
-		<xsl:param name="nbCredits" select="3"/>
--->
-
 		<xsl:variable name="nbCredits" select="nbCredits" />
 		<xsl:variable name="lieu" select="lieu" />
 		<xsl:variable name="nomUE" select="nom" />
-		
-<!--
-		<xsl:if test="(($nbCredits=3) and ($lieu='Luminy'))">
--->
-		<xsl:if test="(($nbCredits=3) and ($lieu='Luminy'))">
-			<li><a href="unites-{@id}.html"><xsl:value-of select="$nomUE" /></a></li>
+		<xsl:variable name="nblieux" select="count(./lieu)"/>
+		<xsl:if test="(($nbCredits=3) and ($lieu='Luminy') and ($nblieux=1))">
+			<li>
+				<a href="unite-{@id}.html"><xsl:value-of select="$nomUE" /></a>
+			</li>
+
 		</xsl:if>
 
 	</xsl:template>
 		
-	<xsl:template name="liste-des-intervenant-enseingant-luminy" >
-<!--
-		<xsl:param name="unite" />
--->
-		
+	<xsl:template name="liste-des-intervenant-enseignant-luminy" >
+		<xsl:variable name="nblieux" select="count(./lieu)"/>
 		<xsl:variable name="lieu" select="lieu" />
-		<xsl:variable name="nomUE" select="nom" />
-		
 		<xsl:for-each select="./ref-intervenant">	
 			<xsl:variable name="inter" select="@ref" />
-			<xsl:if test="$lieu='Luminy'">
-					<li>
-						<xsl:value-of select="$inter" />
-					</li>
+			<xsl:if test="$lieu='Luminy'and $nblieux=1" >
+				<li>
+					<a href="intervenant-{$inter}.html"><xsl:value-of select="$inter" /></a>
+				</li>
 			</xsl:if>
 		</xsl:for-each>
-
 	</xsl:template>
 
 

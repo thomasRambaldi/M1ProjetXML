@@ -1,0 +1,2 @@
+tidy -im -utf8 www/*.html
+tidy -im -asxhtml -utf8 -indent www/*.html

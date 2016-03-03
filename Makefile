@@ -12,12 +12,12 @@ clean:
 dtd:
 # Commencez par préparer le document exemple.xml. 
 # Vérifier la syntaxe de ce document avec la commande
-	xmllint --noout projet_dtd.xml
-	xmllint --valid --noout projet_dtd.xml
+	xmllint --noout newProjet.xml
+	xmllint --valid --noout newProjet.xml
 	
 xsd:
 #~ vérifiez la validité du document XML avec la commande
-	xmllint --noout -schema projet.xsd projet.xml
+	xmllint --noout -schema projet.xsd newProjet.xml
 
 xmltoxml:
 	xsltproc xsl/xml_vers_xml.xsl donnees-master.xml > newProjet.xml
@@ -37,22 +37,24 @@ web:
 tidy:
 # En fait, ce document ne respecte ni la norme XHTML, ni la norme HTML. 
 # Corrigez le avec la commande tidy (le validateur HTML/XHTML du W3C) pour obtenir un document qui respecte la norme HTML du W3C (version en français) :
-	tidy -im www/index.html
+	tidy -im -utf8 www/*.html
 
 # Produisez ensuite sa version XHTML 1.0 (version en français) avec la même commande :
-	tidy -im -asxhtml -indent www/index.html
+	tidy -im -asxhtml -utf8 -indent www/*.html
 
 
 xq:
 	java -cp saxon/saxon9he.jar net.sf.saxon.Query indent=no xq.txt > www/xq.xhtml
 	
 java:
-	javac ./java/SampleCreateDom.java
-	java ./java/SampleCreateDom
+	javac partiejava/afficherUE.java
+	java partiejava/afficherUE
+
+.PHONY: java
 
 all:
 	make dtd 
 	make xsd
 	make web
-	#~ make xq
-	#~ make java
+	make xq
+	make java

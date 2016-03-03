@@ -1,22 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<!DOCTYPE master SYSTEM "projet.dtd"[
-	<!ENTITY  lum  "Luminy">
-	<!ENTITY  stCh  "Saint-Charles">
-	<!ENTITY  stJe  "Saint-Jérome">
-
-	<!ENTITY  dom.luminy  "univ-mrs.fr" >
-	<!ENTITY  dom.dil     "dil.&dom.luminy;" >
-]>
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE master SYSTEM "ue.dtd">
 
 <master>
-			
+	
 	<parcours id="TC">
 		<nom>Tronc commun</nom>
+		
 		
 			<ref-intervenant ref="morin"/>
 			<ref-intervenant ref="massat"/>
 		
+			
 		<description>Description du master</description>
 	
 		<semestre numero="1">
@@ -27,7 +21,6 @@
 					<ref-intervenant ref="perrot"/>
 				
 				<nbCredits>6</nbCredits>
-				
 				<resume>
 					Processus logiciel
 					Gestion de projet
@@ -36,7 +29,6 @@
 				</resume>
 				<plan>Cours/TD/TP : 20h/20h/20h</plan>
 				<lieu>&lum;</lieu>
-				
 			</unite>
 			
 			<unite role="obligatoire" id="ENSINAU2">
@@ -480,85 +472,79 @@
 
 	<intervenant id="morin">
 		<nom>Rémi Morin</nom>
-		<mail>morin@&dom.dil;  </mail>
+		<mail>morin@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~remi.morin/</web>
 	</intervenant>
 	
 	<intervenant id="bechet">
 		<nom>Frederic BECHET</nom>
-		<mail>bechet@&dom.dil;  </mail>
+		<mail>bechet@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~fred.bechet/</web>
 	</intervenant>
 	
 	<intervenant id="ramisch">
 		<nom>Carlos Ramisch</nom>
-		<mail>ramisch@&dom.dil;  </mail>
+		<mail>ramisch@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~carlos.ramisch/</web>
 	</intervenant>
 	
 	<intervenant id="creignou">
 		<nom>Nadia CREIGNOU</nom>
-		<mail>creignou@&dom.dil;  </mail>
+		<mail>creignou@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~nadia.creignoux/</web>
 	</intervenant>
 	
 	<intervenant id="novelli">
 		<nom>Noel NOVELLI</nom>
-		<mail>novelli@&dom.dil;  </mail>
+		<mail>novelli@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~noel.novelli/</web>
 	</intervenant>
 	
 	<intervenant id="massat">
 		<nom>Jean Luc MASSAT</nom>
-		<mail>massat@&dom.dil;  </mail>
+		<mail>massat@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~jean-luc.massat/</web>
 	</intervenant>
 	
 	<intervenant id="sabatier">
 		<nom>Claude SABATIER</nom>
-		<mail>sabatier@&dom.dil;  </mail>
+		<mail>sabatier@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~claude.sabatier/</web>
 	</intervenant>
 	
 	<intervenant id="arrighi">
 		<nom>Pablo Arrighi</nom>
-		<mail>arrighi@&dom.dil;  </mail>
+		<mail>arrighi@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~pablo.arrighi/</web>
 	</intervenant>
 	
 	<intervenant id="perrot">
 		<nom> Kevin Perrot </nom>
-		<mail>perrot@&dom.dil;  </mail>
+		<mail>perrot@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~kevin.perrot/</web>
 	</intervenant>
 	
 	<intervenant id="chepoi">
 		<nom>Victor Chepoi</nom>
-		<mail>chepoi@&dom.dil;  </mail>
+		<mail>chepoi@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~victor.chepoi/</web>
 	</intervenant>
 	
 	<intervenant id="godard">
 		<nom>Emmanuel GODARD</nom>
-		<mail>godard@&dom.dil;  </mail>
+		<mail>godard@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~emmanuel.godard/</web>
 	</intervenant>
 	
 	<intervenant id="niebert">
-<!--
-		<infosup>je teste cette balise</infosup>
--->
 		<nom>Peter Niebert</nom>
-		<mail>niebert@&dom.dil;  </mail>
+		<mail>niebert@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~peter.niebert/</web>
-<!--
-		<adresse>troplololol</adresse>
--->
 	</intervenant>
 	
 	<intervenant id="santocanale">
 		<nom>Luigi Santocanale</nom>
-		<mail>santocanale@&dom.dil;  </mail>
+		<mail>santocanale@&dom.dil;</mail>
 		<web>http://pageperso.lif.univ-mrs.fr/~luigi.santocanale/</web>
 	</intervenant>
 	

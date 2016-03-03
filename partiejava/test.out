@@ -1,0 +1,748 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Projet</title>
+<h3>
+		Liste des intervenants : 
+		<ul>
+<li>
+<a href="intervenant-morin.html">R&eacute;mi Morin</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-bechet.html">Frederic BECHET</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-ramisch.html">Carlos Ramisch</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-creignou.html">Nadia CREIGNOU</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-novelli.html">Noel NOVELLI</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-massat.html">Jean Luc MASSAT</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-sabatier.html">Claude SABATIER</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-arrighi.html">Pablo Arrighi</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-perrot.html"> Kevin Perrot </a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-chepoi.html">Victor Chepoi</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-godard.html">Emmanuel GODARD</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-niebert.html">Peter Niebert</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-santocanale.html">Luigi Santocanale</a>
+</li>
+</ul>
+</h3>
+<h3>
+		Liste des unit&eacute;s : 
+		<ul>
+<li>
+<a href="unites-ENSINAU1.html">G&eacute;nie Logiciel</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU2.html">Complexit&eacute;</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU3.html">R&eacute;seaux</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU4.html">Programmation fonctionnelle</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU12.html">BDR : approfondissement</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU6.html">Programmation logique</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU7.html">Outils de l'internet</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU8.html">Syst&egrave;me embarqu&eacute;</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU9.html"> Fondamentaux pour l'ing&eacute;nierie des langues</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU10.html">Mod&egrave;les &agrave; &eacute;v&egrave;nements discrets</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINAU13.html">Pratique de la cryptographie</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU1.html">Anglais</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU2.html">Communication</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU4.html">XML</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU5.html">Algorithme et recherche op&eacute;rationelle</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU15.html">Programmation parall&egrave;le</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU6.html">Projet</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU7.html">Stage de deux moins</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU8.html">S&eacute;mantique</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU9.html">Algorithme distribu&eacute;e</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU10.html">Int&eacute;gration des syst&egrave;mes d'information</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU11.html">Initiation &agrave; la fouille de donn&eacute;es et &agrave; l'optimisation des SGBD</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU12.html">Intelligence artificielle</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU13.html">Algorithme &agrave; performance garantie</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINBU16.html">Introduction &agrave; l'apprentissage automatique</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINCU29.html">Fiabilit&eacute; logicielle 1</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINCU30.html">Plateforme JEE</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINCU37.html">M&eacute;thodes de d&eacute;veloppement</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINDU3.html">Projet industriel de mise en application</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="unites-ENSINDU4.html">Stage en entreprise</a>
+</li>
+</ul>
+</h3>
+<h3>D&eacute;tails des intervenants : </h3>R&eacute;mi Morinmorin@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~remi.morin/Frederic BECHETbechet@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~fred.bechet/Carlos Ramischramisch@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~carlos.ramisch/Nadia CREIGNOUcreignou@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~nadia.creignoux/Noel NOVELLInovelli@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~noel.novelli/Jean Luc MASSATmassat@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~jean-luc.massat/Claude SABATIERsabatier@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~claude.sabatier/Pablo Arrighiarrighi@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~pablo.arrighi/ Kevin Perrot perrot@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~kevin.perrot/Victor Chepoichepoi@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~victor.chepoi/Emmanuel GODARDgodard@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~emmanuel.godard/Peter Niebertniebert@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~peter.niebert/Luigi Santocanalesantocanale@dil.univ-mrs.frhttp://pageperso.lif.univ-mrs.fr/~luigi.santocanale/<h3>D&eacute;tails des unit&eacute;s : </h3>
+<h4 id="ENSINAU1">
+			Unit&eacute; : G&eacute;nie Logiciel</h4>
+<p>
+			id : ENSINAU1<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-arrighi.html">arrighi</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-perrot.html">perrot</a>
+</li>
+</ul>
+			Credits : 6<br>
+			R&eacute;sume : <br>
+					Processus logiciel
+					Gestion de projet
+					Sp&eacute;cification et conception (artefact : notation UML)
+					Design patterns
+				<br>
+			Plan : Cours/TD/TP : 20h/20h/20h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU2">
+			Unit&eacute; : Complexit&eacute;</h4>
+<p>
+			id : ENSINAU2<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-perrot.html">perrot</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-creignou.html">creignou</a>
+</li>
+</ul>
+			Credits : 6<br>
+			R&eacute;sume : <br>
+					Rappels sur les notions d'analyse de la complexit&eacute; des algorithmes et des probl&egrave;mes.
+					Notion de probl&egrave;mes (d&eacute;cision, recherche, d&eacute;nombrement, &eacute;num&eacute;ration, optimisation). Bornes inf&eacute;rieures de complexit&eacute;.
+					Classes P et NP. Probl&egrave;mes NP-complets.
+					M&eacute;thodes de r&eacute;solution des probl&egrave;mes NP-Complets.
+				<br>
+			Plan : Cours/TD/TP : 20h/20h/20h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU3">
+			Unit&eacute; : R&eacute;seaux</h4>
+<p>
+			id : ENSINAU3<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-godard.html">godard</a>
+</li>
+</ul>
+			Credits : 6<br>
+			R&eacute;sume : <br>
+					Architecture en couches, standard OSI
+					Couche physique
+					Couche liaison de Donn&eacute;es
+					R&eacute;seau IP
+					Algorithmes de routage, routage IP
+					Protocole TCP/IP
+					Couche Application : HTTP, SMTP, FTP, ...
+					Bases des protocoles cryptographiques (terminologie, architecture &agrave; clef publique).
+					Introduction &agrave; la S&eacute;curit&eacute; des r&eacute;seaux.
+				<br>
+			Plan : Cours/TD/TP : 20h/20h/20h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU4">
+			Unit&eacute; : Programmation fonctionnelle</h4>
+<p>
+			id : ENSINAU4<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-santocanale.html">santocanale</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					1- Introduction &agrave; la programmation fonctionnelle, sur l'exemple du langage
+					OCaml
+					Expressions, &eacute;valuation, types de base. Polymorphisme, ordre sup&eacute;rieur.
+					Fonctions r&eacute;cursives, filtrage. Les diverses strat&eacute;gies d'&eacute;valuation, application &agrave; la programmation d'un op&eacute;rateur de point fixe.
+					2- Les types
+					Sommes, types r&eacute;cursifs, polymorphes. Arbres. Filtrage.
+					3- S&eacute;mantique op&eacute;rationnelle
+					Liaisons, environnements, cl&ocirc;tures. &Eacute;valuation des fonctions r&eacute;cursives .
+					4- Aspects imp&eacute;ratifs
+					Exceptions, entr&eacute;es-sorties, s&eacute;quencement, fichiers, r&eacute;f&eacute;rences, tableaux, enregistrements.
+					5- Implantation du filtrage en OCaml
+					Termes formels, substitutions, filtrage.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU12">
+			Unit&eacute; : BDR : approfondissement</h4>
+<p>
+			id : ENSINAU12<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-sabatier.html">sabatier</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-novelli.html">novelli</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					nous sommes d&eacute;sol&eacute;, mais nous n'avons pas encore de resume.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU6">
+			Unit&eacute; : Programmation logique</h4>
+<p>
+			id : ENSINAU6<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Introduction. Forme g&eacute;n&eacute;rale des r&egrave;gles. Effacement, unification, backtracking. Contr&ocirc;le de l'ex&eacute;cution.
+					Listes, arbres et n-uplets. Liste repr&eacute;sent&eacute;e par diff&eacute;rence de listes. Ajout en t&ecirc;te et en queue, concat&eacute;nation.
+					Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
+					R&egrave;gles pr&eacute;d&eacute;finies.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU7">
+			Unit&eacute; : Outils de l'internet</h4>
+<p>
+			id : ENSINAU7<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Pr&eacute;sentation d'Internet.
+					Les langages et les normes sur Internet.
+					Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
+					Les applications web.
+					S&eacute;curit&eacute;.
+					Les nouvelles et futures technologies.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU8">
+			Unit&eacute; : Syst&egrave;me embarqu&eacute;</h4>
+<p>
+			id : ENSINAU8<br>
+			unit&eacute; : option<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-niebert.html">niebert</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					nous sommes d&eacute;sol&eacute;, mais nous n'avons pas encore de resume.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU9">
+			Unit&eacute; :  Fondamentaux pour l'ing&eacute;nierie des langues</h4>
+<p>
+			id : ENSINAU9<br>
+			unit&eacute; : option<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-bechet.html">bechet</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="intervenant-ramisch.html">ramisch</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Rappel de th&eacute;orie des langages
+					Algorithmes d'analyse syntaxique pour grammaires ambigu&euml;s
+					Transducteurs finis et leur application en TAL
+				<br>
+			Plan : Cours/TD/TP : 10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU10">
+			Unit&eacute; : Mod&egrave;les &agrave; &eacute;v&egrave;nements discrets</h4>
+<p>
+			id : ENSINAU10<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Poss&eacute;der les notions de base en mod&eacute;lisation et analyse de syst&egrave;mes dynamiques &agrave; &eacute;v&eacute;nements discrets et particuli&egrave;rement appr&eacute;hender le formalisme r&eacute;seau de
+					P&eacute;tri. &Eacute;tudier la conception et la sp&eacute;cification des syst&egrave;mes r&eacute;actifs &agrave; travers l'analyse du mod&egrave;le &agrave; &eacute;v&egrave;nements discrets (concurrence, parall&eacute;lisme, synchronisation).
+				<br>
+			Plan : Cours/TD : 20h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINAU13">
+			Unit&eacute; : Pratique de la cryptographie</h4>
+<p>
+			id : ENSINAU13<br>
+			unit&eacute; : option<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-morin.html">morin</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					nous sommes d&eacute;sol&eacute;, mais nous n'avons pas encore de resume.
+				<br>
+			Plan : Cours/TD/TP : 20h/20h/20h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU1">
+			Unit&eacute; : Anglais</h4>
+<p>
+			id : ENSINBU1<br>
+			unit&eacute; : obligatoire<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Un enseignement destin&eacute; &agrave; confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU2">
+			Unit&eacute; : Communication</h4>
+<p>
+			id : ENSINBU2<br>
+			unit&eacute; : obligatoire<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+				chapitre 1  : Th&eacute;ories de la communication :
+
+				1.1 La th&eacute;orie math&eacute;matique de l&rsquo;information (Shannon, Weaver), la cybern&eacute;tique (Wiener)
+				1.2 La th&eacute;orie de Palo Alto ( Bateson, Watzlawick) et la th&eacute;orie de la communication par les processus (Mucchielli)
+				chapitre 2 : R&ocirc;le de l&rsquo;interculturalit&eacute; dans le travail en &eacute;quipe :
+
+				2.1 L&rsquo;enqu&ecirc;te interculturelle de Hofstede pour IBM
+				2.2 La gestuelle et le paralangage et la prox&eacute;mie dans le monde (Hall)
+				chapitre 3 : Notions de management et de travail collaboratif
+
+				3.1 Le travail collaboratif vs le travail coop&eacute;ratif
+				3.2 La notion de groupes
+				3.3 Les comp&eacute;tences manag&eacute;riales
+				Pr&eacute;-requis :
+
+				Particuli&egrave;rement utile pour un choix d&rsquo;options, les &eacute;changes internationaux et la formation continue.
+				<br>
+			Plan : Cours/TD : 15h/8h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU4">
+			Unit&eacute; : XML</h4>
+<p>
+			id : ENSINBU4<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-massat.html">massat</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					XML, DTD, XSD
+					XPath, XSLT, XQuery
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU5">
+			Unit&eacute; : Algorithme et recherche op&eacute;rationelle</h4>
+<p>
+			id : ENSINBU5<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-chepoi.html">chepoi</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Programmation lin&eacute;aire.
+					Notions et algorithmes de flots.
+					Applications (couplage, affectation, transport, ...)
+					Programmation dynamique (sac &agrave; dos, ordonnancement, ...)
+					Algorithmes &agrave; performance garantie
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU15">
+			Unit&eacute; : Programmation parall&egrave;le</h4>
+<p>
+			id : ENSINBU15<br>
+			unit&eacute; : obligatoire<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-morin.html">morin</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					nous sommes d&eacute;sol&eacute;, mais nous n'avons pas encore de resume.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU6">
+			Unit&eacute; : Projet</h4>
+<p>
+			id : ENSINBU6<br>
+			unit&eacute; : option<br>
+			Credits : 6<br>
+			R&eacute;sume : <br>
+					Le but du projet est de mettre en oeuvre, de l'analyse &agrave; la programmation, les notions pr&eacute;sent&eacute;es en cours. C'est l'occasion, pour les &eacute;tudiants, d'utiliser sur un cas pratique, les &eacute;l&eacute;ments expos&eacute;es dans les UE. Travail effectu&eacute; sous la direction p&eacute;dagogique d'un enseignant, et donnant lieu &agrave; la r&eacute;daction d'un m&eacute;moire et d'une soutenance orale.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU7">
+			Unit&eacute; : Stage de deux moins</h4>
+<p>
+			id : ENSINBU7<br>
+			unit&eacute; : option<br>
+			Credits : 6<br>
+			R&eacute;sume : <br>
+					Le but du projet est de mettre en oeuvre, de l'analyse &agrave; la programmation, les notions pr&eacute;sent&eacute;es en cours. C'est l'occasion, pour les &eacute;tudiants, d'utiliser sur un cas pratique, les &eacute;l&eacute;ments expos&eacute;es dans les UE. Travail effectu&eacute; sous la direction p&eacute;dagogique d'un enseignant, et donnant lieu &agrave; la r&eacute;daction d'un m&eacute;moire et d'une soutenance orale.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU8">
+			Unit&eacute; : S&eacute;mantique</h4>
+<p>
+			id : ENSINBU8<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					1-Le lambda-calcul simplement typ&eacute;
+
+					Syntaxe, typage, beta et eta-conversions, &eacute;quations. Mod&egrave;les : interpr&eacute;tation des jugements de typage.
+
+					2-Extension &agrave; PCF. La r&egrave;gle \mu.
+
+					3-Points fixes dans les ordres partiels complets.
+
+					Le th&eacute;or&egrave;me de Tarski.
+
+					4-S&eacute;mantique par point fixe de PCF.
+
+					5-Cours de cl&ocirc;ture : survol des diff&eacute;rentes approches s&eacute;mantiques.
+
+					S&eacute;mantiques op&eacute;rationnelles : par transitions, naturelles, machine abstraite de
+
+					Landin.
+
+					S&eacute;mantique d&eacute;notationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage imp&eacute;ratif.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU9">
+			Unit&eacute; : Algorithme distribu&eacute;e</h4>
+<p>
+			id : ENSINBU9<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Un syst&egrave;me distribu&eacute; est un ensemble d&rsquo;entit&eacute;s autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus l&eacute;ger, ...) interconnect&eacute;es et qui peuvent communiquer entre eux. Ce cours est une introduction aux m&eacute;thodes pour la conception d'algorithmes dans de tels syst&egrave;mes. Il donne une pr&eacute;sentation des diff&eacute;rents types de syst&egrave;mes distribu&eacute;s et des diff&eacute;rents probl&egrave;mes que l'on doit r&eacute;soudre. Les probl&egrave;mes abord&eacute;s sont : l'&eacute;lection, le consensus, la diffusion, l'exploration, la r&eacute;plication, l'exploration et le rendez-vous avec des agent mobiles.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU10">
+			Unit&eacute; : Int&eacute;gration des syst&egrave;mes d'information</h4>
+<p>
+			id : ENSINBU10<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Probl&eacute;matique d'int&eacute;gration des SI
+					Architectures et patrons d'int&eacute;gration
+					Syst&egrave;mes d'Information d'entreprises
+					Syst&egrave;mes d'Information sur Internet
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU11">
+			Unit&eacute; : Initiation &agrave; la fouille de donn&eacute;es et &agrave; l'optimisation des SGBD</h4>
+<p>
+			id : ENSINBU11<br>
+			unit&eacute; : option<br>
+				Responsable(s) : <ul>
+<li>
+<a href="intervenant-novelli.html">novelli</a>
+</li>
+</ul>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Actuellement, de plus en plus de donn&eacute;es sont conserv&eacute;es sans &ecirc;tre r&eacute;ellement exploit&eacute;es. Elles repr&eacute;sentent pourtant une source importante d&rsquo;information. La fouille de donn&eacute;es peut-&ecirc;tre d&eacute;finie comme le processus permettant d&rsquo;extraire de l&rsquo;information non triviale et non pr&eacute;alablement connue &agrave; partir des donn&eacute;es. Dans cet enseignement, nous nous focaliserons sur l&rsquo;extraction de corr&eacute;lations entre les donn&eacute;es (r&egrave;gle d&rsquo;association, D&eacute;pendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualit&eacute; des donn&eacute;es (d&eacute;tection et correction d&rsquo;erreur).
+
+					Par ailleurs, nous passerons du c&ocirc;t&eacute; obscur des SGBD en mettant &eacute;vidence le lien existant entre les performances d'un SGBD et les choix d'impl&eacute;mentation des diff&eacute;rents algorithmes utilis&eacute;s (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les diff&eacute;rentes impl&eacute;mentations existantes des op&eacute;rations de base des SGBD comme les jointures ou les tris accompagn&eacute;s de leurs conditions d'utilisation.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU12">
+			Unit&eacute; : Intelligence artificielle</h4>
+<p>
+			id : ENSINBU12<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Introduction &agrave; l'IA
+					Probl&egrave;mes d'espace d'&eacute;tats et d'exploration
+					Logiques pour l'IA et d&eacute;monstration automatique
+					Repr&eacute;sentation de connaissances
+					Actions, temps et planification
+					Programmation par contraintes et r&eacute;seaux de contraintes	
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU13">
+			Unit&eacute; : Algorithme &agrave; performance garantie</h4>
+<p>
+			id : ENSINBU13<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Algorithmes d'approximation de nature combinatoire pour les probl&egrave;mes
+					NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac &agrave; dos, bin packing, couverture d'ensemble, la plus courte sur-s&eacute;quence commune ;
+
+					FPTAS et PTAS (ordonnancement de taches et sac &agrave; dos) ;
+					Algorithmes d'approximation par programmation lin&eacute;aire : l'arrondi et la m&eacute;thode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;
+					Algorithmes en ligne et comp&eacute;titivit&eacute; : la pagination et les k-serveurs.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINBU16">
+			Unit&eacute; : Introduction &agrave; l'apprentissage automatique</h4>
+<p>
+			id : ENSINBU16<br>
+			unit&eacute; : option<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					nous sommes d&eacute;sol&eacute;, mais nous n'avons pas encore de resume.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINCU29">
+			Unit&eacute; : Fiabilit&eacute; logicielle 1</h4>
+<p>
+			id : ENSINCU29<br>
+			unit&eacute; : obligatoire<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Introduction fiabilit&eacute; vs s&eacute;curit&eacute;
+					Test boite blanche (graphe de contr&ocirc;le, de donn&eacute;e, mesure de couverture, mod&egrave;le &agrave; base d'automates, qualit&eacute; logicielle)
+					Test boite noire (sp&eacute;cifications formelle informelles, construction de suite de tests : partitionnement, tests au limites, tests combinatoires, graphe de causalit&eacute;)
+					Test et Simulation (Objets factices, inversion de contr&ocirc;le, int&eacute;gration)
+					Validation Formelle (syst&egrave;me de preuves : Hoare, logique de s&eacute;paration, analyse statique)
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINCU30">
+			Unit&eacute; : Plateforme JEE</h4>
+<p>
+			id : ENSINCU30<br>
+			unit&eacute; : obligatoire<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					L'objet du cours est de pr&eacute;senter le d&eacute;veloppement d'applications dans le cadre de la plateforme JEE ( Java Enterprise Edition ). Nous &eacute;tudions notamment
+
+					Acc&egrave;s aux ressources ext&eacute;rieures :
+
+					les interfaces java d'acc&egrave;s aux bases de donn&eacute;es relationnelles (JDBC),
+					les interfaces d'acc&egrave;s aux annuaires d'entreprise (LDAP, JNDI)
+					Mise en place d'une couche m&eacute;tier (middleware) :
+
+					les architectures logicielles &agrave; base de composants (EJB, Spring, Jboss, Glassfish) et les principes de mise en œuvre (sp&eacute;cification/implantation, injection de d&eacute;pendances et inversion de contr&ocirc;le),
+					l'architecture des applications 3-tiers,
+					Couche de pr&eacute;sentation et interfaces Web :
+
+					les technologies de mise en œuvre des applications WEB (Servlet, JSP, Tomcat, Glassfish).
+				<br>
+			Plan : Cours/TP : 12h/18h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINCU37">
+			Unit&eacute; : M&eacute;thodes de d&eacute;veloppement</h4>
+<p>
+			id : ENSINCU37<br>
+			unit&eacute; : obligatoire<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					En cours, sont vus les &eacute;l&eacute;ments suivants :
+
+					Les probl&eacute;matiques d'un d&eacute;veloppement p&eacute;renne (principes, cycle de d&eacute;veloppement, m&eacute;thodologies)
+					Rappels d'UML : principaux diagrammes (classes, activit&eacute;s, cas, s&eacute;quences), repr&eacute;sentation, &eacute;tudes de cas
+					Les design patterns en profondeur (description d&eacute;taill&eacute;e des 26 patterns, &eacute;tude de cas)
+				<br>
+			Plan : <br>
+			Lieu : Luminy</p>
+<h4 id="ENSINDU3">
+			Unit&eacute; : Projet industriel de mise en application</h4>
+<p>
+			id : ENSINDU3<br>
+			unit&eacute; : obligatoire<br>
+			Credits : 6<br>
+			R&eacute;sume : <br>
+					R&eacute;daction du cahier des charges. Conception de l'application. D&eacute;veloppement et test. R&eacute;daction d'un m&eacute;moire et pr&eacute;sentation.
+				<br>
+			Plan : Cours/TD/TP : 10h/10h/10h<br>
+			Lieu : Luminy</p>
+<h4 id="ENSINDU4">
+			Unit&eacute; : Stage en entreprise</h4>
+<p>
+			id : ENSINDU4<br>
+			unit&eacute; : obligatoire<br>
+			Credits : 3<br>
+			R&eacute;sume : <br>
+					Recherche d'un stage. Validation du sujet de stage. Suivi du bon d&eacute;roulement du stage. Aide &agrave; la r&eacute;daction du m&eacute;moire de stage. Soutenance et &eacute;valuation du stage.
+				<br>
+			Plan : <br>
+			Lieu : Luminy</p>
+</head>
+</html>

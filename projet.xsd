@@ -11,6 +11,7 @@ http://www.w3schools.com/xml/schema_complex.asp
       <xs:sequence>
         <xs:element maxOccurs="unbounded" ref="parcours"/>
         <xs:element maxOccurs="unbounded" ref="intervenant"/>
+        <xs:element maxOccurs="unbounded" ref="unite"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -27,7 +28,7 @@ http://www.w3schools.com/xml/schema_complex.asp
 	<xs:element ref="nbCredits"/>
 	<xs:element ref="resume"/>
 	<xs:element minOccurs="0" ref="plan"/>
-	<xs:element ref="lieu"/>
+	<xs:element ref="lieu" minOccurs="0" maxOccurs="unbounded"/>
   </xs:sequence>
       
   <xs:attribute name="id" type="xs:ID"/>
@@ -73,7 +74,7 @@ http://www.w3schools.com/xml/schema_complex.asp
 -->
 		<xs:element ref="nom"/>
 		<xs:element ref="mail"/>
-		<xs:element ref="web"/>
+		<xs:element ref="web" minOccurs="0" />
 <!--
 		<xs:any processContents="lax" minOccurs="0"/>
 -->
@@ -136,21 +137,21 @@ http://www.w3schools.com/xml/schema_complex.asp
 	  <xs:element name="debouche" type="xs:string"/>
   
 	<xs:element name="semestre">
-		<xs:complexType>
-		  <xs:sequence>
-			<xs:element maxOccurs="unbounded" ref="unite"/>
-		  </xs:sequence>
-		  <xs:attribute name="numero">
-			<xs:simpleType>
-			  <xs:restriction base="xs:token">
-				<xs:enumeration value="1"/>
-				<xs:enumeration value="2"/>
-				<xs:enumeration value="3"/>
-				<xs:enumeration value="4"/>
-			  </xs:restriction>
-			</xs:simpleType>
-		  </xs:attribute>
-		</xs:complexType>
-	</xs:element>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ref-unite"/>
+      </xs:sequence>
+      <xs:attribute name="numero">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
   
 </xs:schema>
